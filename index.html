@@ -259,7 +259,7 @@ h2.display.on-light { color: var(--black); }
   letter-spacing: 0.3em; text-transform: uppercase; color: var(--red); margin-bottom: 0.5rem;
 }
 .exp-hero-title {
-  font-family: var(--cond); font-weight: 900; font-size: clamp(48px, 8vw, 96px);
+  font-family: var(--cond); font-weight: 900; font-size: clamp(36px, 5vw, 58px);
   text-transform: uppercase; line-height: 0.9; letter-spacing: -0.01em;
   color: var(--cream); margin-bottom: 1rem;
 }
@@ -423,9 +423,9 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
   <div class="nav-logo">P<em>L</em>U</div>
   <div class="nav-links">
     <a href="#about">Introduction</a>
-    <a href="#skills">Skills</a>
-    <a href="#exp-lol">Project</a>
-    <a href="#exp-hmun">Experience</a>
+    <a href="#whatido">What I Do</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
     <a href="#closing">Contact</a>
   </div>
 
@@ -450,185 +450,152 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
   </div>
 </section>
 
-<!-- TWO-PANEL INTRO (CDPR STYLE) -->
-<div class="two-panel section reveal">
-  <div class="panel">
-    <div class="panel-img-placeholder">
-      <span>📷 Add image</span><span style="font-size:10px;">e.g. a gaming / community photo</span>
-    </div>
-    <div class="panel-content">
-      <div class="panel-label">Who I Am</div>
-      <div class="panel-title">Storyteller &<br>Community Builder</div>
-      <p class="panel-body">I started my first fan community at 17 with zero followers and no budget. Since then I've managed social media for NGO campaigns that reached national TV and led PR teams for international conferences.</p>
-    </div>
-  </div>
-  <div class="panel-divider"></div>
-  <div class="panel">
-    <div class="panel-img-placeholder">
-      <span>📷 Add image</span><span style="font-size:10px;">e.g. content creation or event photo</span>
-    </div>
-    <div class="panel-content">
-      <div class="panel-label">What I Do</div>
-      <div class="panel-title">Write. Manage.<br>Engage. Analyze.</div>
-      <p class="panel-body">I write copy that sounds like a human, build content calendars that hold up under pressure, and read engagement data to understand not just what works — but why.</p>
-    </div>
-  </div>
-</div>
+<!-- TWO-PANEL REMOVED -->
 
 <!-- ABOUT -->
 <section id="about" class="section section-light">
   <div class="inner reveal">
+    <div class="eyebrow red" style="margin-bottom:1.5rem;">01 — Introduction</div>
     <div class="about-grid">
+      <!-- LEFT: PHOTO + INFO CARDS -->
       <div>
-        <div class="about-photo">
+        <div class="about-photo" style="border-radius:20px;">
           <div class="about-photo-ph">
-            <span style="font-size:22px;">📷</span>
+            <span style="font-size:28px;">📷</span>
             <span>Add your photo</span>
           </div>
         </div>
-        <div class="about-name-tag">
-          <a href="mailto:luyenphuonglinh1011@gmail.com">luyenphuonglinh1011@gmail.com</a>
-          <a href="https://linkedin.com/in/phuong-linh-luyen">LinkedIn ↗</a>
-          <span style="color:#999;">Milan, Italy · Vietnamese, English, Japanese</span>
+        <div style="display:flex;flex-direction:column;gap:8px;margin-top:1rem;">
+          <div style="background:var(--cream2);border-radius:12px;padding:0.875rem 1.25rem;display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-size:10px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(200,0,30,0.7);">Based</span>
+            <span style="font-size:13px;color:#555;">Milan, Italy</span>
+          </div>
+          <div style="background:var(--cream2);border-radius:12px;padding:0.875rem 1.25rem;display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-size:10px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(200,0,30,0.7);">Available</span>
+            <span style="font-size:13px;color:#555;">July–Sep 2025 · Warsaw</span>
+          </div>
+          <div style="background:var(--cream2);border-radius:12px;padding:0.875rem 1.25rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px;">
+            <span style="font-size:10px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(200,0,30,0.7);">Languages</span>
+            <span style="font-size:13px;color:#555;">Vietnamese · English · Japanese</span>
+          </div>
+          <a href="mailto:luyenphuonglinh1011@gmail.com" style="background:var(--red);border-radius:12px;padding:0.875rem 1.25rem;display:flex;justify-content:center;align-items:center;text-decoration:none;">
+            <span style="font-size:13px;font-weight:600;color:white;letter-spacing:0.05em;">luyenphuonglinh1011@gmail.com</span>
+          </a>
+          <a href="https://linkedin.com/in/phuong-linh-luyen" style="background:var(--cream2);border-radius:12px;padding:0.875rem 1.25rem;display:flex;justify-content:center;align-items:center;text-decoration:none;border:1px solid rgba(200,0,30,0.2);">
+            <span style="font-size:13px;font-weight:500;color:var(--red);">LinkedIn ↗</span>
+          </a>
         </div>
       </div>
+
+      <!-- RIGHT: BIO + EDUCATION -->
       <div>
-        <div class="eyebrow red" style="margin-bottom:1rem;">Introduction</div>
-        <h2 class="display on-light" style="font-size:clamp(40px,5vw,64px);">Hi,<br>I'm <span class="red">Linh.</span></h2>
-        <div class="body-text" style="color:#3a3a3a;">
-          <p>I'm a first-year student at Università Bocconi, Milan, studying Economics and Management for Arts, Culture and Communication. Before Bocconi, I grew up in Hanoi, graduated from the Amsterdam High School for the Gifted, and spent three years building communities, running PR campaigns, and writing stories for live audiences.</p>
-          <p>I started my first fan page because I noticed a gap — no one had built a Vietnamese-language community for one of the best League of Legends players in the world. So I built it. That instinct — to see what's missing and fill it — is how I approach everything.</p>
-          <p>What connects all of it: I care deeply about the people on the other side of the screen, and I know how to write for them.</p>
+        <h2 class="display on-light" style="font-size:clamp(40px,5vw,64px); margin-bottom:1.5rem;">Hi,<br>I'm <span class="red">Linh.</span></h2>
+
+        <div style="border-left:3px solid var(--red);padding-left:1.25rem;margin-bottom:1.75rem;">
+          <p style="font-family:'Libre Baskerville',serif;font-size:17px;font-style:italic;color:#3a3a3a;line-height:1.65;">[ Add your motivation quote here — why community, why gaming, what drives you ]</p>
         </div>
+
+        <div class="body-text" style="color:#3a3a3a;margin-bottom:2rem;">
+          <p>I'm a first-year student at Università Bocconi, Milan, studying Economics and Management for Arts, Culture and Communication. Before Bocconi, I grew up in Hanoi and spent years building communities, running PR campaigns, and writing stories for live audiences.</p>
+          <p>I started my first Discord community at 13. My first fan page at 17. What connects all of it: I care deeply about the people on the other side of the screen, and I know how to write for them.</p>
+        </div>
+
+        <div class="eyebrow red" style="margin-bottom:1rem;">Education</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:1.5rem;">
+          <div style="background:var(--cream2);border-radius:16px;padding:1.25rem 1.5rem;">
+            <div style="font-family:var(--mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--red);margin-bottom:0.5rem;">2024 — 2027</div>
+            <div style="font-family:var(--cond);font-size:18px;font-weight:700;text-transform:uppercase;color:var(--black);margin-bottom:0.4rem;">Università Bocconi</div>
+            <div style="font-size:12px;font-weight:300;color:#666;line-height:1.5;">BSc Economics & Management for Arts, Culture & Communication · Milan</div>
+          </div>
+          <div style="background:var(--cream2);border-radius:16px;padding:1.25rem 1.5rem;">
+            <div style="font-family:var(--mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--red);margin-bottom:0.5rem;">2021 — 2024</div>
+            <div style="font-family:var(--cond);font-size:18px;font-weight:700;text-transform:uppercase;color:var(--black);margin-bottom:0.4rem;">Hanoi–Amsterdam</div>
+            <div style="font-size:12px;font-weight:300;color:#666;line-height:1.5;">High School for the Gifted · IELTS 8.0 · SAT 1330 · Excellence Scholarship</div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
 </section>
 
-<!-- EDUCATION BAND -->
-<div class="band reveal">
-  <span class="band-t">Università Bocconi</span><span class="band-sep">·</span>
-  <span class="band-t">BSc Economics, Arts & Communication</span><span class="band-sep">·</span>
-  <span class="band-t">2024–2027</span><span class="band-sep">·</span>
-  <span class="band-t">Hanoi–Amsterdam High School</span><span class="band-sep">·</span>
-  <span class="band-t">IELTS 8.0 · SAT 1330</span>
+
+<!-- WHAT I DO: SKILLS + APPROACH SIDE BY SIDE -->
+<section id="whatido" class="section section-mid">
+  <div class="inner reveal">
+    <div class="eyebrow red" style="margin-bottom:0.75rem;">02 — What I Do</div>
+    <h2 class="display" style="margin-bottom:2.5rem;">Tools, Skills<br><span class="red">& Approach</span></h2>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:3px; background:rgba(200,0,30,0.08);">
+
+      <!-- LEFT: SKILLS & TOOLS -->
+      <div style="background:var(--dark); padding:2.5rem;">
+        <div style="font-family:var(--cond);font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--cream);margin-bottom:2rem;padding-bottom:0.75rem;border-bottom:2px solid var(--red);">Skills & Tools</div>
+
+        <div style="display:flex; flex-direction:column; gap:2rem;">
+          <div>
+            <div style="font-family:var(--mono);font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted2);margin-bottom:1rem;">Community & Social</div>
+            <div style="display:flex;flex-wrap:wrap;gap:14px;">
+              <div style="display:flex;flex-direction:column;align-items:center;gap:6px;"><div style="width:48px;height:48px;border-radius:12px;overflow:hidden;"><img src="images/icons/facebook.png" style="width:100%;height:100%;object-fit:cover;display:block;"></div><span style="font-size:10px;color:var(--muted2);text-align:center;">Facebook</span></div>
+              <div style="display:flex;flex-direction:column;align-items:center;gap:6px;"><div style="width:48px;height:48px;border-radius:12px;overflow:hidden;"><img src="images/icons/instagram.png" style="width:100%;height:100%;object-fit:cover;display:block;"></div><span style="font-size:10px;color:var(--muted2);text-align:center;">Instagram</span></div>
+              <div style="display:flex;flex-direction:column;align-items:center;gap:6px;"><div style="width:48px;height:48px;border-radius:12px;overflow:hidden;"><img src="images/icons/discord.png" style="width:100%;height:100%;object-fit:cover;display:block;"></div><span style="font-size:10px;color:var(--muted2);text-align:center;">Discord</span></div>
+              <div style="display:flex;flex-direction:column;align-items:center;gap:6px;"><div style="width:48px;height:48px;border-radius:12px;overflow:hidden;"><img src="images/icons/meta.png" style="width:100%;height:100%;object-fit:cover;display:block;"></div><span style="font-size:10px;color:var(--muted2);text-align:center;">Meta Suite</span></div>
+            </div>
+          </div>
+          <div>
+            <div style="font-family:var(--mono);font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted2);margin-bottom:1rem;">Content Creation</div>
+            <div style="display:flex;flex-wrap:wrap;gap:14px;">
+              <div style="display:flex;flex-direction:column;align-items:center;gap:6px;"><div style="width:48px;height:48px;border-radius:12px;overflow:hidden;"><img src="images/icons/capcut.png" style="width:100%;height:100%;object-fit:cover;display:block;"></div><span style="font-size:10px;color:var(--muted2);text-align:center;">CapCut</span></div>
+              <div style="display:flex;flex-direction:column;align-items:center;gap:6px;"><div style="width:48px;height:48px;border-radius:12px;overflow:hidden;"><img src="images/icons/canva.png" style="width:100%;height:100%;object-fit:cover;display:block;"></div><span style="font-size:10px;color:var(--muted2);text-align:center;">Canva</span></div>
+              <div style="display:flex;flex-direction:column;align-items:center;gap:6px;"><div style="width:48px;height:48px;border-radius:12px;overflow:hidden;"><img src="images/icons/ppt.png" style="width:100%;height:100%;object-fit:cover;display:block;"></div><span style="font-size:10px;color:var(--muted2);text-align:center;">PowerPoint</span></div>
+            </div>
+          </div>
+          <div>
+            <div style="font-family:var(--mono);font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted2);margin-bottom:0.75rem;">Skills</div>
+            <div style="display:flex;flex-wrap:wrap;gap:6px;">
+              <span style="background:rgba(200,0,30,0.12);border:1px solid rgba(200,0,30,0.3);border-radius:20px;padding:5px 12px;font-size:11px;font-weight:500;color:var(--red);">Community Management</span>
+              <span style="background:rgba(200,0,30,0.12);border:1px solid rgba(200,0,30,0.3);border-radius:20px;padding:5px 12px;font-size:11px;font-weight:500;color:var(--red);">Copywriting</span>
+              <span style="background:rgba(200,0,30,0.12);border:1px solid rgba(200,0,30,0.3);border-radius:20px;padding:5px 12px;font-size:11px;font-weight:500;color:var(--red);">Content Creation</span>
+              <span style="background:rgba(200,0,30,0.12);border:1px solid rgba(200,0,30,0.3);border-radius:20px;padding:5px 12px;font-size:11px;font-weight:500;color:var(--red);">Social Media Strategy</span>
+              <span style="background:rgba(200,0,30,0.12);border:1px solid rgba(200,0,30,0.3);border-radius:20px;padding:5px 12px;font-size:11px;font-weight:500;color:var(--red);">Analytics & Reporting</span>
+              <span style="background:var(--muted3);border:1px solid var(--muted3);border-radius:20px;padding:5px 12px;font-size:11px;color:var(--muted);">Event Design</span>
+              <span style="background:var(--muted3);border:1px solid var(--muted3);border-radius:20px;padding:5px 12px;font-size:11px;color:var(--muted);">Server Architecture</span>
+              <span style="background:var(--muted3);border:1px solid var(--muted3);border-radius:20px;padding:5px 12px;font-size:11px;color:var(--muted);">Campaign Planning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: MY APPROACH -->
+      <div style="background:var(--dark2); padding:2.5rem;">
+        <div style="font-family:var(--cond);font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--cream);margin-bottom:2rem;padding-bottom:0.75rem;border-bottom:2px solid var(--red);">My Approach</div>
+        <div class="cando-grid" style="grid-template-columns:1fr 1fr;">
+          <div class="cando-card" style="border-radius:12px;"><div class="cando-n">01</div><h3>Write Copy That Sounds Human</h3><p>Every caption is for a specific person. I match tone to context — playful for memes, honest for milestones.</p></div>
+          <div class="cando-card" style="border-radius:12px;"><div class="cando-n">02</div><h3>Build Content Calendars</h3><p>I plan around events, schedules, and campaign phases — consistent presence across platforms.</p></div>
+          <div class="cando-card" style="border-radius:12px;"><div class="cando-n">03</div><h3>Monitor & Manage Communities</h3><p>Comments, messages, sentiment — I keep spaces positive and active. Audience vs community: I know the difference.</p></div>
+          <div class="cando-card" style="border-radius:12px;"><div class="cando-n">04</div><h3>Analyze & Iterate</h3><p>Meta Business Suite analytics to assess what works — then iterate. Data informs; it doesn't replace judgment.</p></div>
+          <div class="cando-card" style="border-radius:12px;"><div class="cando-n">05</div><h3>Coordinate Outreach</h3><p>From national press coverage to student partnerships — I build relationships outside the community too.</p></div>
+          <div class="cando-card" style="border-radius:12px;"><div class="cando-n">06</div><h3>Brainstorm & Propose Ideas</h3><p>I pitch formats, plan giveaways, propose series. I come with ideas and listen when others have better ones.</p></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- PROJECTS TRANSITION -->
+<div id="projects" style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--black);position:relative;overflow:hidden;">
+  <div style="position:absolute;font-family:var(--cond);font-weight:900;font-size:38vw;color:transparent;-webkit-text-stroke:1px rgba(200,0,30,0.05);user-select:none;line-height:1;">PRJ</div>
+  <div style="position:relative;z-index:1;text-align:center;" class="reveal">
+    <div style="font-family:var(--mono);font-size:11px;letter-spacing:0.25em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:1rem;">03 — Selected Work</div>
+    <div style="font-family:var(--cond);font-weight:900;font-size:clamp(80px,18vw,200px);text-transform:uppercase;line-height:0.88;letter-spacing:-0.02em;color:var(--cream);">PRO<span style="color:var(--red);">JECTS</span></div>
+    <p style="font-family:var(--serif);font-style:italic;font-size:18px;color:var(--muted);margin-top:2rem;">Community building · Fan pages · What comes next</p>
+  </div>
+  <div style="position:absolute;bottom:3rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;">
+    <span style="font-family:var(--mono);font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted2);">Scroll</span>
+    <div style="width:1px;height:40px;background:linear-gradient(to bottom,transparent,var(--red));"></div>
+  </div>
 </div>
-
-<!-- SKILLS -->
-<section id="skills" class="section section-mid">
-  <div class="inner reveal">
-    <div class="eyebrow red" style="margin-bottom:0.75rem;">Capabilities</div>
-    <h2 class="display" style="margin-bottom:2.5rem;">Tools &<br>Skills</h2>
-
-    <div style="display:flex; flex-direction:column; gap:2.5rem;">
-
-      <!-- Community & Social -->
-      <div>
-        <div style="font-family:var(--mono); font-size:10px; letter-spacing:0.18em; text-transform:uppercase; color:rgba(242,237,228,0.35); margin-bottom:1.25rem; padding-bottom:0.6rem; border-bottom:1px solid rgba(200,0,30,0.15);">Community & Social</div>
-        <div style="display:flex; flex-wrap:wrap; gap:20px;">
-          <div style="display:flex;flex-direction:column;align-items:center;gap:8px;width:72px;">
-            <div style="width:52px;height:52px;border-radius:14px;overflow:hidden;"><img src="images/icons/facebook.png" style="width:100%;height:100%;object-fit:cover;"></div>
-            <span style="font-size:10px;font-weight:500;color:rgba(242,237,228,0.55);text-align:center;line-height:1.3;">Facebook</span>
-          </div>
-          <div style="display:flex;flex-direction:column;align-items:center;gap:8px;width:72px;">
-            <div style="width:52px;height:52px;border-radius:14px;overflow:hidden;"><img src="images/icons/instagram.png" style="width:100%;height:100%;object-fit:cover;"></div>
-            <span style="font-size:10px;font-weight:500;color:rgba(242,237,228,0.55);text-align:center;line-height:1.3;">Instagram</span>
-          </div>
-          <div style="display:flex;flex-direction:column;align-items:center;gap:8px;width:72px;">
-            <div style="width:52px;height:52px;border-radius:14px;overflow:hidden;"><img src="images/icons/discord.png" style="width:100%;height:100%;object-fit:cover;"></div>
-            <span style="font-size:10px;font-weight:500;color:rgba(242,237,228,0.55);text-align:center;line-height:1.3;">Discord</span>
-          </div>
-          <div style="display:flex;flex-direction:column;align-items:center;gap:8px;width:72px;">
-            <div style="width:52px;height:52px;border-radius:14px;overflow:hidden;"><img src="images/icons/meta.png" style="width:100%;height:100%;object-fit:cover;"></div>
-            <span style="font-size:10px;font-weight:500;color:rgba(242,237,228,0.55);text-align:center;line-height:1.3;">Meta Business Suite</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Content Creation -->
-      <div>
-        <div style="font-family:var(--mono); font-size:10px; letter-spacing:0.18em; text-transform:uppercase; color:rgba(242,237,228,0.35); margin-bottom:1.25rem; padding-bottom:0.6rem; border-bottom:1px solid rgba(200,0,30,0.15);">Content Creation</div>
-        <div style="display:flex; flex-wrap:wrap; gap:20px;">
-          <div style="display:flex;flex-direction:column;align-items:center;gap:8px;width:72px;">
-            <div style="width:52px;height:52px;border-radius:14px;background:#010101;display:flex;align-items:center;justify-content:center;">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.27 8.27 0 0 0 4.84 1.55V6.79a4.85 4.85 0 0 1-1.07-.1z"/></svg>
-            </div>
-            <span style="font-size:10px;font-weight:500;color:rgba(242,237,228,0.55);text-align:center;line-height:1.3;">TikTok</span>
-          </div>
-          <div style="display:flex;flex-direction:column;align-items:center;gap:8px;width:72px;">
-            <div style="width:52px;height:52px;border-radius:14px;overflow:hidden;"><img src="images/icons/capcut.png" style="width:100%;height:100%;object-fit:cover;"></div>
-            <span style="font-size:10px;font-weight:500;color:rgba(242,237,228,0.55);text-align:center;line-height:1.3;">CapCut</span>
-          </div>
-          <div style="display:flex;flex-direction:column;align-items:center;gap:8px;width:72px;">
-            <div style="width:52px;height:52px;border-radius:14px;overflow:hidden;"><img src="images/icons/canva.png" style="width:100%;height:100%;object-fit:cover;"></div>
-            <span style="font-size:10px;font-weight:500;color:rgba(242,237,228,0.55);text-align:center;line-height:1.3;">Canva</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Productivity & Analytics -->
-      <div>
-        <div style="font-family:var(--mono); font-size:10px; letter-spacing:0.18em; text-transform:uppercase; color:rgba(242,237,228,0.35); margin-bottom:1.25rem; padding-bottom:0.6rem; border-bottom:1px solid rgba(200,0,30,0.15);">Productivity & Analytics</div>
-        <div style="display:flex; flex-wrap:wrap; gap:20px;">
-          <div style="display:flex;flex-direction:column;align-items:center;gap:8px;width:72px;">
-            <div style="width:52px;height:52px;border-radius:14px;background:#217346;display:flex;align-items:center;justify-content:center;">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M23 1H7a1 1 0 0 0-1 1v4H1a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h5v4a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM6 16H2v-2h4v2zm0-4H2v-2h4v2zm0-4H2V6h4v2zm7 10.5l-2-3.5-2 3.5H7l3-5-3-5h2l2 3.5 2-3.5h2l-3 5 3 5h-2zm9-1.5h-6v-2h6v2zm0-4h-6v-2h6v2zm0-4h-6V7h6v2z"/></svg>
-            </div>
-            <span style="font-size:10px;font-weight:500;color:rgba(242,237,228,0.55);text-align:center;line-height:1.3;">Excel</span>
-          </div>
-          <div style="display:flex;flex-direction:column;align-items:center;gap:8px;width:72px;">
-            <div style="width:52px;height:52px;border-radius:14px;overflow:hidden;"><img src="images/icons/ppt.png" style="width:100%;height:100%;object-fit:cover;"></div>
-            <span style="font-size:10px;font-weight:500;color:rgba(242,237,228,0.55);text-align:center;line-height:1.3;">PowerPoint</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Skills pills -->
-      <div>
-        <div style="font-family:var(--mono); font-size:10px; letter-spacing:0.18em; text-transform:uppercase; color:rgba(242,237,228,0.35); margin-bottom:1.25rem; padding-bottom:0.6rem; border-bottom:1px solid rgba(200,0,30,0.15);">Core Skills</div>
-        <div style="display:flex; flex-wrap:wrap; gap:8px;">
-          <div style="background:rgba(200,0,30,0.12);border:1px solid rgba(200,0,30,0.3);border-radius:20px;padding:6px 14px;font-size:12px;font-weight:500;color:#C8001E;">Community Management</div>
-          <div style="background:rgba(200,0,30,0.12);border:1px solid rgba(200,0,30,0.3);border-radius:20px;padding:6px 14px;font-size:12px;font-weight:500;color:#C8001E;">Copywriting</div>
-          <div style="background:rgba(200,0,30,0.12);border:1px solid rgba(200,0,30,0.3);border-radius:20px;padding:6px 14px;font-size:12px;font-weight:500;color:#C8001E;">Content Creation</div>
-          <div style="background:rgba(200,0,30,0.12);border:1px solid rgba(200,0,30,0.3);border-radius:20px;padding:6px 14px;font-size:12px;font-weight:500;color:#C8001E;">Social Media Strategy</div>
-          <div style="background:rgba(200,0,30,0.12);border:1px solid rgba(200,0,30,0.3);border-radius:20px;padding:6px 14px;font-size:12px;font-weight:500;color:#C8001E;">Analytics & Reporting</div>
-          <div style="background:rgba(242,237,228,0.06);border:1px solid rgba(242,237,228,0.12);border-radius:20px;padding:6px 14px;font-size:12px;font-weight:500;color:rgba(242,237,228,0.45);">Server Architecture</div>
-          <div style="background:rgba(242,237,228,0.06);border:1px solid rgba(242,237,228,0.12);border-radius:20px;padding:6px 14px;font-size:12px;font-weight:500;color:rgba(242,237,228,0.45);">Event Design</div>
-          <div style="background:rgba(242,237,228,0.06);border:1px solid rgba(242,237,228,0.12);border-radius:20px;padding:6px 14px;font-size:12px;font-weight:500;color:rgba(242,237,228,0.45);">Campaign Planning</div>
-          <div style="background:rgba(242,237,228,0.06);border:1px solid rgba(242,237,228,0.12);border-radius:20px;padding:6px 14px;font-size:12px;font-weight:500;color:rgba(242,237,228,0.45);">Outreach & Partnerships</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- WHAT I CAN DO -->
-<section class="section section-dark">
-  <div class="inner reveal">
-    <div class="eyebrow" style="margin-bottom:0.75rem;">What I Can Do</div>
-    <h2 class="display" style="margin-bottom:2.5rem;">My<br>Approach</h2>
-    <div class="cando-grid">
-      <div class="cando-card"><div class="cando-n">01</div><h3>Write Copy That Sounds Human</h3><p>Every caption is for a specific person at a specific moment. I match tone to context — playful for memes, honest for milestones, warm for community moments.</p></div>
-      <div class="cando-card"><div class="cando-n">02</div><h3>Build & Maintain Content Calendars</h3><p>I plan content around events, match schedules, and campaign phases — scheduling across platforms to maintain consistent presence and brand voice.</p></div>
-      <div class="cando-card"><div class="cando-n">03</div><h3>Monitor Communities & Manage Interactions</h3><p>I track comments, messages, and community sentiment — responding in ways that keep spaces positive, engaged, and active.</p></div>
-      <div class="cando-card"><div class="cando-n">04</div><h3>Analyze Performance & Iterate</h3><p>I use Meta Business Suite and platform analytics to assess reach, engagement, saves, and shares — then iterate. Data informs decisions; it doesn't replace judgment.</p></div>
-      <div class="cando-card"><div class="cando-n">05</div><h3>Coordinate Outreach & Partnerships</h3><p>From securing national press coverage to coordinating student organisations for events — I know how to build relationships outside the community too.</p></div>
-      <div class="cando-card"><div class="cando-n">06</div><h3>Brainstorm & Propose New Ideas</h3><p>I pitch meme formats, plan giveaways, and propose content series. I come with ideas and I know how to listen when others have better ones.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- PASSION -->
-<section id="passion" class="section">
-  <div class="inner reveal">
-    <div class="eyebrow red" style="margin-bottom:1.5rem;">Motivation</div>
-    <div class="passion-inner">
-      <div class="passion-quote" style="font-family:var(--serif);font-size:clamp(18px,2.5vw,26px);font-style:italic;line-height:1.6;color:var(--cream);margin-bottom:2rem;padding-left:2rem;border-left:3px solid var(--red);">"I've been building online communities since I was 13 — running a public roleplay server on Discord where I designed the server structure, wrote event narratives, managed member interactions, and kept a community engaged through original storylines. I didn't know it was called community management then. I just knew I loved making people feel like they belonged somewhere."</div>
-      <p style="font-size:16px;font-weight:300;color:var(--muted);line-height:1.85;max-width:640px;">What started as a passion project became a pattern — from Discord servers to NGO campaigns, from conference PR to a fan page that grew to 5,300 followers from nothing. Every project is different, but the instinct is always the same: find the gap, fill it, and make something people actually want to be part of.</p>
-    </div>
-  </div>
-</section>
 
 <!-- DISCORD ORIGIN -->
 <section class="section section-dark">
@@ -893,50 +860,57 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
   </div>
 </div>
 
-<!-- ════════ UPCOMING ════════ -->
-<div id="upcoming" class="section section-dark">
-  <div class="inner reveal">
-    <div class="eyebrow red" style="margin-bottom:1rem;">Upcoming</div>
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2px; background:rgba(200,0,30,0.08);">
 
-      <div style="background:var(--dark2); padding:3rem 2.5rem; border-top:2px solid var(--red); grid-column:1/-1;">
+<!-- ════════ PROJECT C: WHAT'S NEXT ════════ -->
+<div class="band">
+  <span class="band-t">Project C</span><span class="band-sep">·</span>
+  <span class="band-t">What's Next</span><span class="band-sep">·</span>
+  <span class="band-t">Public Game Jam · Aug 2026</span>
+</div>
+
+<section class="section section-dark">
+  <div class="inner reveal">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;">
+      <div>
         <div style="display:flex; align-items:center; gap:10px; margin-bottom:1.5rem;">
           <div style="width:8px;height:8px;border-radius:50%;background:var(--red);animation:pulse 2s ease-in-out infinite;flex-shrink:0;"></div>
-          <span style="font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--red);">In Planning</span>
+          <span style="font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--red);">In Planning · Aug 2026</span>
         </div>
-        <h3 style="font-family:var(--cond);font-size:clamp(32px,4vw,52px);font-weight:900;text-transform:uppercase;letter-spacing:0.01em;color:var(--cream);line-height:0.95;margin-bottom:1.25rem;">Public Game Jam<br><span style="color:var(--red);">Vietnam</span></h3>
-        <p style="font-size:15px;font-weight:300;color:var(--muted);line-height:1.8;max-width:580px;margin-bottom:2rem;">Organising one of the first public game jams in Vietnam — open to indie developers, students, and hobbyists. Working with a small team of friends to design the format, build the community around it, and make it happen.</p>
+        <h3 style="font-family:var(--cond);font-size:clamp(36px,5vw,64px);font-weight:900;text-transform:uppercase;line-height:0.95;color:var(--cream);margin-bottom:1.25rem;">Public Game Jam<br><span style="color:var(--red);">Vietnam 2026</span></h3>
+        <p style="font-size:15px;font-weight:300;color:var(--muted);line-height:1.85;margin-bottom:2rem;">Organising one of the first public game jams in Vietnam — open to indie developers, students, and hobbyists. Working with a small team to design the format, build the community around it, and make it happen.</p>
         <div style="display:flex;gap:1.5rem;flex-wrap:wrap;">
-          <div>
-            <div style="font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:0.3rem;">Role</div>
-            <div style="font-size:13px;color:var(--muted);">Co-organiser & Community Lead</div>
-          </div>
-          <div>
-            <div style="font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:0.3rem;">Status</div>
-            <div style="font-size:13px;color:var(--muted);">Planning phase</div>
-          </div>
-          <div>
-            <div style="font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:0.3rem;">Why it matters</div>
-            <div style="font-size:13px;color:var(--muted);">Building the Vietnamese game dev community from the ground up</div>
-          </div>
+          <div><div style="font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:0.3rem;">Role</div><div style="font-size:13px;color:var(--muted);">Co-organiser & Community Lead</div></div>
+          <div><div style="font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:0.3rem;">Status</div><div style="font-size:13px;color:var(--muted);">Planning phase</div></div>
+          <div><div style="font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:0.3rem;">Target</div><div style="font-size:13px;color:var(--muted);">August 2026</div></div>
         </div>
       </div>
-
+      <div style="background:var(--dark2);border-radius:20px;aspect-ratio:1;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;">
+        <div style="font-size:56px;">🎮</div>
+        <div style="font-family:var(--mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted2);">Visual Coming Soon</div>
+      </div>
     </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE TRANSITION -->
+<div id="experience" style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--dark);position:relative;overflow:hidden;">
+  <div style="position:absolute;font-family:var(--cond);font-weight:900;font-size:32vw;color:transparent;-webkit-text-stroke:1px rgba(200,0,30,0.04);user-select:none;line-height:1;">EXP</div>
+  <div style="position:relative;z-index:1;text-align:center;" class="reveal">
+    <div style="font-family:var(--mono);font-size:11px;letter-spacing:0.25em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:1rem;">04 — Professional Experience</div>
+    <div style="font-family:var(--cond);font-weight:900;font-size:clamp(72px,15vw,180px);text-transform:uppercase;line-height:0.88;letter-spacing:-0.02em;color:var(--cream);">EXPERI<span style="color:var(--red);">ENCE</span></div>
+    <p style="font-family:var(--serif);font-style:italic;font-size:18px;color:var(--muted);margin-top:2rem;">HMUN · We Are 222 · GUISE The Musical</p>
+  </div>
+  <div style="position:absolute;bottom:3rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;">
+    <span style="font-family:var(--mono);font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted2);">Scroll</span>
+    <div style="width:1px;height:40px;background:linear-gradient(to bottom,transparent,var(--red));"></div>
   </div>
 </div>
 
-<!-- ════════ EXP 02 — HMUN ════════ -->
-<div class="band">
-  <span class="band-t">Experience</span><span class="band-sep">·</span>
-  <span class="band-t">HMUN · We Are 222 · GUISE</span><span class="band-sep">·</span>
-  <span class="band-t">2021–2023</span>
-</div>
 
-<div class="band" style="background:var(--dark2); border-top: 1px solid var(--muted3);">
-  <span class="band-t" style="color:var(--muted); font-size:13px;">02 — Hanoi Model UN</span><span class="band-sep" style="color:var(--muted3);">·</span>
-  <span class="band-t" style="color:var(--muted); font-size:13px;">03 — We Are 222</span><span class="band-sep" style="color:var(--muted3);">·</span>
-  <span class="band-t" style="color:var(--muted); font-size:13px;">04 — GUISE The Musical</span>
+<div class="band">
+  <span class="band-t">Experience 01</span><span class="band-sep">·</span>
+  <span class="band-t">HMUN</span><span class="band-sep">·</span>
+  <span class="band-t">Sep–Dec 2023</span>
 </div>
 
 <div id="exp-hmun" class="section section-mid">
@@ -1081,27 +1055,6 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
   </div>
 </div>
 
-<!-- UPCOMING -->
-<div class="band">
-  <span class="band-t">Upcoming</span><span class="band-sep">·</span>
-  <span class="band-t">What's Next</span>
-</div>
-
-<section id="upcoming" class="section section-dark">
-  <div class="inner reveal">
-    <div class="eyebrow" style="margin-bottom:1rem;">Coming Soon</div>
-    <h2 class="display" style="margin-bottom:2.5rem;">What's<br><span class="red">Next</span></h2>
-    <div class="upcoming-card">
-      <div class="upcoming-tag">🎮 Game Jam · Vietnam · 2025</div>
-      <h3 class="upcoming-title">Public Game Jam — Vietnam</h3>
-      <p class="upcoming-body">Currently planning and co-hosting one of the first public game jams in Vietnam — open to developers, designers, and players across the country. More details coming soon.</p>
-      <div class="upcoming-status">
-        <span class="status-dot"></span>
-        <span>In planning</span>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- CLOSING -->
 <section id="closing" class="section">
