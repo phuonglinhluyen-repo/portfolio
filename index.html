@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phuong Linh Luyen — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Barlow:wght@300;400;500;600;700;900&family=Barlow+Condensed:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --red: #C8001E;
+  --red2: #E8001E;
+  --black: #0A0A0A;
+  --dark: #111111;
+  --dark2: #181818;
+  --cream: #F2EDE4;
+  --cream2: #E8E1D6;
+  --white: #FAFAF8;
+  --muted: rgba(242,237,228,0.55);
+  --muted2: rgba(242,237,228,0.3);
+  --muted3: rgba(242,237,228,0.12);
+  --serif: 'Libre Baskerville', Georgia, serif;
+  --sans: 'Barlow', sans-serif;
+  --cond: 'Barlow Condensed', sans-serif;
+}
+html { scroll-behavior: smooth; }
+body { background: var(--black); color: var(--cream); font-family: var(--sans); overflow-x: hidden; }
+
+/* ─── NAV ─── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  padding: 0 4rem; height: 56px;
+  display: flex; align-items: center; justify-content: space-between;
+  background: rgba(10,10,10,0); transition: background 0.4s;
+}
+nav.scrolled { background: rgba(10,10,10,0.95); border-bottom: 1px solid rgba(200,0,30,0.2); }
+.nav-logo {
+  font-family: var(--cond); font-size: 18px; font-weight: 700;
+  letter-spacing: 0.2em; color: var(--cream); text-transform: uppercase;
+}
+.nav-logo em { color: var(--red); font-style: normal; }
+.nav-links { display: flex; gap: 2.5rem; }
+.nav-links a {
+  font-family: var(--sans); font-size: 12px; font-weight: 500;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
+  text-decoration: none; transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--cream); }
+
+/* ─── HERO ─── */
+#hero {
+  min-height: 100vh; position: relative;
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  padding: 6rem 4rem;
+  background: var(--black);
+  overflow: hidden;
+  text-align: center;
+}
+.hero-bg {
+  position: absolute; inset: 0; z-index: 0;
+  background:
+    linear-gradient(to bottom, rgba(10,10,10,0.2) 0%, rgba(10,10,10,0.85) 70%, rgba(10,10,10,1) 100%),
+    linear-gradient(135deg, #0a0a0a 0%, #1a0005 40%, #0a0005 60%, #0a0a0a 100%);
+}
+.hero-bg-img {
+  position: absolute; inset: 0;
+  background: var(--dark2);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--cond); font-size: 13px; letter-spacing: 0.2em;
+  text-transform: uppercase; color: rgba(200,0,30,0.2);
+}
+.hero-scroll-hint {
+  position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 6px; z-index: 2;
+  opacity: 0; animation: fadeIn 1s 1.5s forwards;
+}
+.hero-scroll-hint span { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted2); font-family: var(--sans); }
+.scroll-arrow { width: 1px; height: 40px; background: linear-gradient(to bottom, transparent, var(--red)); }
+.hero-content { position: relative; z-index: 1; }
+.hero-eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 500;
+  letter-spacing: 0.25em; text-transform: uppercase; color: var(--red);
+  margin-bottom: 1.5rem; display: flex; align-items: center; gap: 12px;
+}
+.hero-eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--red); display: block; }
+.hero-name {
+  font-family: var(--cond); font-weight: 900;
+  font-size: clamp(64px, 11vw, 148px);
+  line-height: 0.9; letter-spacing: -0.01em;
+  text-transform: uppercase; color: var(--cream);
+  margin-bottom: 2rem;
+}
+.hero-name .red { color: var(--red); }
+.hero-tagline {
+  font-family: var(--serif); font-size: clamp(16px, 1.8vw, 20px);
+  font-style: italic; font-weight: 400; color: var(--muted);
+  max-width: 520px; line-height: 1.75; margin-bottom: 3rem;
+}
+.hero-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 4rem; }
+.pill {
+  font-family: var(--sans); font-size: 11px; font-weight: 500;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 7px 16px; border: 1px solid rgba(200,0,30,0.5);
+  color: var(--muted); border-radius: 2px;
+}
+.hero-footer {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  padding-top: 2rem; border-top: 1px solid var(--muted3);
+  flex-wrap: wrap; gap: 1rem;
+}
+.hero-meta { font-size: 12px; font-weight: 400; color: var(--muted2); letter-spacing: 0.06em; line-height: 2; }
+.hero-meta a { color: var(--red); text-decoration: none; }
+
+/* ─── SHARED ─── */
+.section { position: relative; }
+.section-dark { background: var(--black); }
+.section-mid { background: var(--dark); }
+.section-light { background: var(--cream); color: var(--black); }
+.section-light .eyebrow { color: var(--red); }
+.section-light .eyebrow::before { background: var(--red); }
+.section-light p, .section-light li { color: #444; }
+
+.inner { padding: 6rem 4rem; }
+.inner-sm { padding: 4rem 4rem; }
+
+.eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: 0.22em; text-transform: uppercase; color: rgba(242,237,228,0.4);
+  display: flex; align-items: center; gap: 10px; margin-bottom: 1rem;
+}
+.eyebrow::before { content: ''; width: 22px; height: 1px; background: rgba(242,237,228,0.4); display: block; }
+.eyebrow.red { color: var(--red); }
+.eyebrow.red::before { background: var(--red); }
+
+h2.display {
+  font-family: var(--cond); font-weight: 900; text-transform: uppercase;
+  font-size: clamp(48px, 7vw, 96px); line-height: 0.92; letter-spacing: -0.01em;
+  margin-bottom: 2.5rem;
+}
+h2.display .red { color: var(--red); }
+h2.display.on-light { color: var(--black); }
+
+.body-text { font-size: 16px; font-weight: 300; line-height: 1.85; }
+.body-text p + p { margin-top: 1rem; }
+
+/* ─── TWO-PANEL (CDPR style) ─── */
+.two-panel { display: grid; grid-template-columns: 1fr 1fr; min-height: 70vh; }
+.panel {
+  position: relative; overflow: hidden;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 3rem;
+  background: var(--dark2);
+}
+.panel::before {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(10,10,10,0.9) 0%, rgba(10,10,10,0.3) 60%, transparent 100%);
+  z-index: 1;
+}
+.panel-img-placeholder {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--sans); font-size: 11px; letter-spacing: 0.15em;
+  text-transform: uppercase; color: rgba(200,0,30,0.25);
+  flex-direction: column; gap: 6px;
+}
+.panel-content { position: relative; z-index: 2; }
+.panel-label {
+  font-family: var(--sans); font-size: 10px; font-weight: 700;
+  letter-spacing: 0.3em; text-transform: uppercase; color: var(--red);
+  margin-bottom: 0.75rem;
+}
+.panel-title {
+  font-family: var(--cond); font-weight: 700; font-size: clamp(28px, 3vw, 40px);
+  text-transform: uppercase; letter-spacing: 0.02em; color: var(--cream);
+  line-height: 1.1; margin-bottom: 1rem;
+}
+.panel-body { font-size: 14px; font-weight: 300; color: var(--muted); line-height: 1.7; max-width: 320px; }
+.panel-divider { width: 1px; background: rgba(200,0,30,0.3); }
+
+/* ─── ABOUT ─── */
+.about-grid { display: grid; grid-template-columns: 340px 1fr; gap: 6rem; align-items: start; }
+.about-photo {
+  width: 100%; aspect-ratio: 3/4; background: var(--dark2);
+  position: relative; overflow: hidden;
+}
+.about-photo-ph {
+  position: absolute; inset: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 8px;
+  color: rgba(200,0,30,0.3); font-size: 11px; letter-spacing: 0.15em;
+  text-transform: uppercase; font-family: var(--sans);
+}
+.about-name-tag {
+  margin-top: 1rem; padding: 0.75rem 1rem;
+  border: 1px solid var(--muted3);
+  font-family: var(--sans); font-size: 11px; color: var(--muted2);
+  letter-spacing: 0.1em; line-height: 1.8;
+}
+.about-name-tag a { color: var(--red); text-decoration: none; display: block; }
+
+/* ─── SKILLS ─── */
+.skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--muted3); }
+.skill-block { background: var(--dark); padding: 2.5rem 2rem; }
+.skill-block-title {
+  font-family: var(--cond); font-size: 20px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.05em; color: var(--cream);
+  padding-bottom: 1rem; border-bottom: 1px solid var(--red);
+  margin-bottom: 1.25rem;
+}
+.skill-list { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+.skill-list li { font-size: 13px; font-weight: 300; color: var(--muted); line-height: 1.5; padding-left: 1rem; position: relative; }
+.skill-list li::before { content: '—'; position: absolute; left: 0; color: var(--red); font-size: 11px; }
+
+/* ─── WHAT I CAN DO ─── */
+.cando-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--muted3); }
+.cando-card {
+  background: var(--dark2); padding: 2.5rem 2rem;
+  border-top: 2px solid transparent; transition: border-color 0.25s, background 0.25s;
+}
+.cando-card:hover { border-top-color: var(--red); background: #1e1e1e; }
+.cando-n { font-family: var(--cond); font-size: 48px; font-weight: 900; color: rgba(200,0,30,0.12); line-height: 1; margin-bottom: 0.5rem; }
+.cando-card h3 { font-family: var(--cond); font-size: 19px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--cream); margin-bottom: 0.75rem; }
+.cando-card p { font-size: 13px; font-weight: 300; color: var(--muted); line-height: 1.7; }
+
+/* ─── PASSION ─── */
+#passion { background: var(--dark2); }
+.passion-inner { max-width: 780px; }
+.passion-quote {
+  font-family: var(--serif); font-size: clamp(22px, 3vw, 32px);
+  font-style: italic; line-height: 1.5; color: var(--cream);
+  margin-bottom: 2rem; padding-left: 2rem;
+  border-left: 3px solid var(--red);
+}
+.passion-ph {
+  padding: 1.5rem 2rem; border: 1px dashed rgba(200,0,30,0.3);
+  font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase;
+  color: rgba(200,0,30,0.4); font-family: var(--sans);
+}
+
+/* ─── EXP SECTIONS ─── */
+.exp-hero {
+  position: relative; min-height: 60vh;
+  display: flex; align-items: flex-end; padding: 3rem 4rem;
+  overflow: hidden; background: var(--dark2);
+}
+.exp-hero-bg {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.5) 50%, rgba(10,10,10,0.2) 100%);
+  z-index: 1;
+}
+.exp-hero-img {
+  position: absolute; inset: 0; background: var(--dark2);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--sans); font-size: 11px; letter-spacing: 0.15em;
+  text-transform: uppercase; color: rgba(200,0,30,0.2); flex-direction: column; gap: 6px;
+}
+.exp-hero-content { position: relative; z-index: 2; }
+.exp-hero-num {
+  font-family: var(--cond); font-size: 11px; font-weight: 700;
+  letter-spacing: 0.3em; text-transform: uppercase; color: var(--red); margin-bottom: 0.5rem;
+}
+.exp-hero-title {
+  font-family: var(--cond); font-weight: 900; font-size: clamp(48px, 8vw, 96px);
+  text-transform: uppercase; line-height: 0.9; letter-spacing: -0.01em;
+  color: var(--cream); margin-bottom: 1rem;
+}
+.exp-hero-title .red { color: var(--red); }
+.exp-hero-sub { font-family: var(--serif); font-style: italic; font-size: 16px; color: var(--muted); }
+
+/* EXP DETAIL LAYOUT */
+.exp-detail { display: grid; grid-template-columns: 280px 1fr; gap: 0; }
+.exp-sidebar { background: var(--dark); padding: 3rem 2rem; border-right: 1px solid var(--muted3); }
+.exp-sidebar-item { margin-bottom: 2rem; }
+.exp-sidebar-item:last-child { margin-bottom: 0; }
+.exp-sidebar-label { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(200,0,30,0.7); margin-bottom: 0.4rem; }
+.exp-sidebar-val { font-size: 13px; font-weight: 300; color: var(--muted); line-height: 1.6; }
+.exp-main { padding: 3rem; }
+
+/* VISUAL ZONES */
+.vz-label { font-family: var(--sans); font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(200,0,30,0.6); margin-bottom: 1rem; margin-top: 2.5rem; }
+.vz-label:first-child { margin-top: 0; }
+.viz-grid { display: grid; gap: 3px; background: rgba(200,0,30,0.08); margin-bottom: 0.5rem; }
+.vg-2 { grid-template-columns: 1fr 1fr; }
+.vg-3 { grid-template-columns: 1fr 1fr 1fr; }
+.vg-2-1 { grid-template-columns: 2fr 1fr; }
+.viz-cell {
+  background: var(--dark2); min-height: 220px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 8px; color: rgba(200,0,30,0.35); font-family: var(--sans);
+  font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+  text-align: center; padding: 1.5rem; border: 1.5px dashed rgba(200,0,30,0.2);
+  transition: border-color 0.2s;
+}
+.viz-cell:hover { border-color: rgba(200,0,30,0.4); }
+.viz-cell-tall { min-height: 320px; }
+.viz-cell-short { min-height: 160px; }
+.viz-icon { font-size: 22px; opacity: 0.5; }
+
+/* RESULTS */
+.results-bar {
+  background: var(--red); display: grid; gap: 1px;
+  background-clip: padding-box; margin: 2.5rem 0;
+}
+.results-4 { grid-template-columns: repeat(4,1fr); }
+.results-3 { grid-template-columns: repeat(3,1fr); }
+.results-2 { grid-template-columns: repeat(2,1fr); }
+.result-cell { background: var(--red); padding: 2rem 1.75rem; }
+.result-n {
+  font-family: var(--cond); font-weight: 900; font-size: clamp(36px, 4vw, 56px);
+  color: var(--cream); line-height: 1; letter-spacing: 0.02em; margin-bottom: 0.3rem;
+}
+.result-n sup { font-size: 0.5em; vertical-align: super; }
+.result-lbl { font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(242,237,228,0.65); }
+
+/* LEARNED */
+.learned-row { display: grid; gap: 1px; background: var(--muted3); margin-top: 2.5rem; }
+.learned-2 { grid-template-columns: 1fr 1fr; }
+.learned-3 { grid-template-columns: 1fr 1fr 1fr; }
+.learned-card { background: var(--dark); padding: 2rem 1.75rem; border-bottom: 2px solid transparent; transition: border-color 0.2s; }
+.learned-card:hover { border-bottom-color: var(--red); }
+.learned-card h4 { font-family: var(--sans); font-size: 14px; font-weight: 600; color: var(--cream); margin-bottom: 0.6rem; line-height: 1.35; }
+.learned-card p { font-size: 13px; font-weight: 300; color: var(--muted); line-height: 1.7; }
+
+/* ─── BAND ─── */
+.band {
+  background: var(--red); padding: 0.9rem 4rem;
+  display: flex; align-items: center; gap: 2rem;
+}
+.band-t { font-family: var(--cond); font-weight: 700; font-size: 16px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--cream); white-space: nowrap; flex-shrink: 0; }
+.band-sep { font-size: 10px; color: rgba(242,237,228,0.4); flex-shrink: 0; }
+
+/* ─── CLOSING ─── */
+#closing { background: var(--dark2); }
+.closing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
+.closing-left h2 { margin-bottom: 1.5rem; }
+.closing-right { display: flex; flex-direction: column; gap: 0; }
+.c-item { padding: 1.5rem 0; border-bottom: 1px solid var(--muted3); }
+.c-item:last-child { border-bottom: none; }
+.c-label { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(200,0,30,0.6); margin-bottom: 0.35rem; }
+.c-val { font-size: 15px; color: var(--cream); }
+.c-val a { color: var(--red); text-decoration: none; }
+
+footer {
+  background: var(--black); padding: 2rem 4rem;
+  display: flex; justify-content: space-between; align-items: center;
+  border-top: 1px solid var(--muted3);
+}
+footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em; color: var(--muted2); }
+
+/* ─── ANIMATIONS ─── */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+@keyframes fadeIn { to { opacity: 1; } }
+
+/* ─── UPCOMING ─── */
+.upcoming-card {
+  max-width: 680px;
+  border: 1px solid rgba(200,0,30,0.3);
+  padding: 3rem;
+  position: relative;
+  background: var(--dark2);
+}
+.upcoming-card::before {
+  content: 'UPCOMING';
+  position: absolute; top: -1px; right: 2rem;
+  background: var(--red);
+  font-family: var(--sans); font-size: 9px; font-weight: 700;
+  letter-spacing: 0.25em; color: var(--cream);
+  padding: 4px 12px;
+}
+.upcoming-tag {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--red); margin-bottom: 1rem;
+}
+.upcoming-title {
+  font-family: var(--cond); font-weight: 700; font-size: 36px;
+  text-transform: uppercase; letter-spacing: 0.02em;
+  color: var(--cream); margin-bottom: 1rem; line-height: 1.1;
+}
+.upcoming-body {
+  font-size: 15px; font-weight: 300; color: var(--muted);
+  line-height: 1.8; margin-bottom: 2rem;
+}
+.upcoming-status {
+  display: flex; align-items: center; gap: 8px;
+  font-family: var(--sans); font-size: 12px; font-weight: 500;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted2);
+}
+.status-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--red);
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.8); }
+}
+
+@media (max-width: 900px) {
+  nav { padding: 0 1.5rem; }
+  .nav-links { display: none; }
+  .inner, .inner-sm { padding: 4rem 1.5rem; }
+  #hero { padding: 0 1.5rem 4rem; }
+  .two-panel { grid-template-columns: 1fr; }
+  .panel-divider { width: 100%; height: 1px; }
+  .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .skills-grid, .cando-grid { grid-template-columns: 1fr; }
+  .exp-detail { grid-template-columns: 1fr; }
+  .exp-sidebar { border-right: none; border-bottom: 1px solid var(--muted3); }
+  .exp-hero { padding: 2rem 1.5rem; }
+  .results-4, .results-3 { grid-template-columns: 1fr 1fr; }
+  .learned-3 { grid-template-columns: 1fr; }
+  .closing-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .vg-3 { grid-template-columns: 1fr; }
+  .band { padding: 0.9rem 1.5rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo">P<em>L</em>U</div>
+  <div class="nav-links">
+    <a href="#about">Introduction</a>
+    <a href="#skills">Skills</a>
+    <a href="#exp-lol">Project</a>
+    <a href="#exp-hmun">Experience</a>
+    <a href="#closing">Contact</a>
+  </div>
+
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg">
+    <div class="hero-bg-img">
+      <span>📷 Add a hero background image here</span>
+      <span style="font-size:10px; opacity:0.5;">(replace .hero-bg-img with your image)</span>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-arrow"></div>
+  </div>
+  <div class="hero-content reveal">
+    <div class="hero-eyebrow" style="justify-content:center;">Community & Social Media Portfolio</div>
+    <h1 class="hero-name">Phuong<br>Linh <span class="red">Luyen</span></h1>
+    <p class="hero-tagline" style="margin:0 auto;">I build online communities from scratch — writing the copy, reading the data, and finding the content that makes people feel like they belong somewhere.</p>
+  </div>
+</section>
+
+<!-- TWO-PANEL INTRO (CDPR STYLE) -->
+<div class="two-panel section reveal">
+  <div class="panel">
+    <div class="panel-img-placeholder">
+      <span>📷 Add image</span><span style="font-size:10px;">e.g. a gaming / community photo</span>
+    </div>
+    <div class="panel-content">
+      <div class="panel-label">Who I Am</div>
+      <div class="panel-title">Storyteller &<br>Community Builder</div>
+      <p class="panel-body">I started my first fan community at 17 with zero followers and no budget. Since then I've managed social media for NGO campaigns that reached national TV and led PR teams for international conferences.</p>
+    </div>
+  </div>
+  <div class="panel-divider"></div>
+  <div class="panel">
+    <div class="panel-img-placeholder">
+      <span>📷 Add image</span><span style="font-size:10px;">e.g. content creation or event photo</span>
+    </div>
+    <div class="panel-content">
+      <div class="panel-label">What I Do</div>
+      <div class="panel-title">Write. Manage.<br>Engage. Analyze.</div>
+      <p class="panel-body">I write copy that sounds like a human, build content calendars that hold up under pressure, and read engagement data to understand not just what works — but why.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="section section-light">
+  <div class="inner reveal">
+    <div class="about-grid">
+      <div>
+        <div class="about-photo">
+          <div class="about-photo-ph">
+            <span style="font-size:22px;">📷</span>
+            <span>Add your photo</span>
+          </div>
+        </div>
+        <div class="about-name-tag">
+          <a href="mailto:luyenphuonglinh1011@gmail.com">luyenphuonglinh1011@gmail.com</a>
+          <a href="https://linkedin.com/in/phuong-linh-luyen">LinkedIn ↗</a>
+          <span style="color:#999;">Milan, Italy · Vietnamese, English, Japanese</span>
+        </div>
+      </div>
+      <div>
+        <div class="eyebrow red" style="margin-bottom:1rem;">Introduction</div>
+        <h2 class="display on-light" style="font-size:clamp(40px,5vw,64px);">Hi,<br>I'm <span class="red">Linh.</span></h2>
+        <div class="body-text" style="color:#3a3a3a;">
+          <p>I'm a first-year student at Università Bocconi, Milan, studying Economics and Management for Arts, Culture and Communication. Before Bocconi, I grew up in Hanoi, graduated from the Amsterdam High School for the Gifted, and spent three years building communities, running PR campaigns, and writing stories for live audiences.</p>
+          <p>I started my first fan page because I noticed a gap — no one had built a Vietnamese-language community for one of the best League of Legends players in the world. So I built it. That instinct — to see what's missing and fill it — is how I approach everything.</p>
+          <p>What connects all of it: I care deeply about the people on the other side of the screen, and I know how to write for them.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION BAND -->
+<div class="band reveal">
+  <span class="band-t">Università Bocconi</span><span class="band-sep">·</span>
+  <span class="band-t">BSc Economics, Arts & Communication</span><span class="band-sep">·</span>
+  <span class="band-t">2024–2027</span><span class="band-sep">·</span>
+  <span class="band-t">Hanoi–Amsterdam High School</span><span class="band-sep">·</span>
+  <span class="band-t">IELTS 8.0 · SAT 1330</span>
+</div>
+
+<!-- SKILLS -->
+<section id="skills" class="section section-mid">
+  <div class="inner reveal">
+    <div class="eyebrow red" style="margin-bottom:0.75rem;">Capabilities</div>
+    <h2 class="display" style="margin-bottom:2.5rem;">Tools &<br>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-block">
+        <div class="skill-block-title">Community</div>
+        <ul class="skill-list">
+          <li>Community management & moderation</li>
+          <li>Content calendar planning & scheduling</li>
+          <li>Audience engagement & interaction</li>
+          <li>Fan community building</li>
+          <li>Community event organisation</li>
+        </ul>
+      </div>
+      <div class="skill-block">
+        <div class="skill-block-title">Content & Copy</div>
+        <ul class="skill-list">
+          <li>Social media copywriting</li>
+          <li>Short-form content & video</li>
+          <li>Meme & trend-based formats</li>
+          <li>Scriptwriting & narrative</li>
+          <li>Campaign communications</li>
+        </ul>
+      </div>
+      <div class="skill-block">
+        <div class="skill-block-title">Tools & Analytics</div>
+        <ul class="skill-list">
+          <li>Meta Business Suite</li>
+          <li>Facebook & Instagram</li>
+          <li>Engagement & reach analytics</li>
+          <li>Microsoft Excel & PowerPoint</li>
+          <li>Canva (basic)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT I CAN DO -->
+<section class="section section-dark">
+  <div class="inner reveal">
+    <div class="eyebrow" style="margin-bottom:0.75rem;">What I Can Do</div>
+    <h2 class="display" style="margin-bottom:2.5rem;">My<br>Approach</h2>
+    <div class="cando-grid">
+      <div class="cando-card"><div class="cando-n">01</div><h3>Write Copy That Sounds Human</h3><p>Every caption is for a specific person at a specific moment. I match tone to context — playful for memes, honest for milestones, warm for community moments.</p></div>
+      <div class="cando-card"><div class="cando-n">02</div><h3>Build & Maintain Content Calendars</h3><p>I plan content around events, match schedules, and campaign phases — scheduling across platforms to maintain consistent presence and brand voice.</p></div>
+      <div class="cando-card"><div class="cando-n">03</div><h3>Monitor Communities & Manage Interactions</h3><p>I track comments, messages, and community sentiment — responding in ways that keep spaces positive, engaged, and active.</p></div>
+      <div class="cando-card"><div class="cando-n">04</div><h3>Analyze Performance & Iterate</h3><p>I use Meta Business Suite and platform analytics to assess reach, engagement, saves, and shares — then iterate. Data informs decisions; it doesn't replace judgment.</p></div>
+      <div class="cando-card"><div class="cando-n">05</div><h3>Coordinate Outreach & Partnerships</h3><p>From securing national press coverage to coordinating student organisations for events — I know how to build relationships outside the community too.</p></div>
+      <div class="cando-card"><div class="cando-n">06</div><h3>Brainstorm & Propose New Ideas</h3><p>I pitch meme formats, plan giveaways, and propose content series. I come with ideas and I know how to listen when others have better ones.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PASSION -->
+<section id="passion" class="section">
+  <div class="inner reveal">
+    <div class="eyebrow red" style="margin-bottom:1.5rem;">Motivation</div>
+    <div class="passion-inner">
+      <div class="passion-quote">[ Add your motivation statement here — why community work? Why gaming? What drives you? ]</div>
+      <div class="passion-ph">✏ Placeholder — replace with your own words when ready</div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ EXP 01 — LOL ════════ -->
+<div class="band">
+  <span class="band-t">Project 01</span><span class="band-sep">·</span>
+  <span class="band-t">LOL Fan Page</span><span class="band-sep">·</span>
+  <span class="band-t">Community Building</span><span class="band-sep">·</span>
+  <span class="band-t">2024–Present</span>
+</div>
+
+<div id="exp-lol" class="section">
+  <div class="exp-hero reveal">
+    <div class="exp-hero-bg"></div>
+    <div class="exp-hero-img">
+      <span>📷 Add a cover image for this project</span>
+      <span style="font-size:10px; opacity:0.5;">(e.g. fan page banner or screenshot)</span>
+    </div>
+    <div class="exp-hero-content">
+      <div class="exp-hero-num">Project 01 · 2024–Present</div>
+      <h2 class="exp-hero-title">ShowMaker<br><span class="red">Fan Page</span></h2>
+      <p class="exp-hero-sub">Community Manager & Content Creator · Facebook · Vietnamese</p>
+    </div>
+  </div>
+  <div class="exp-detail reveal">
+    <div class="exp-sidebar">
+      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Role</div><div class="exp-sidebar-val">Community Manager & Content Creator</div></div>
+      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Platform</div><div class="exp-sidebar-val">Facebook</div></div>
+      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Language</div><div class="exp-sidebar-val">Vietnamese</div></div>
+      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Tools</div><div class="exp-sidebar-val">Meta Business Suite</div></div>
+      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Context</div><div class="exp-sidebar-val">Built from zero in December 2023. No prior audience, no budget. Every post written by hand, every format tested against the next.</div></div>
+    </div>
+    <div class="exp-main">
+      <div class="vz-label">Posts & Copywriting</div>
+      <div class="viz-grid vg-3">
+        <div class="viz-cell"><div class="viz-icon">📱</div><span>Match reaction post</span></div>
+        <div class="viz-cell"><div class="viz-icon">📱</div><span>Milestone post</span></div>
+        <div class="viz-cell"><div class="viz-icon">📱</div><span>Meme / trend post</span></div>
+      </div>
+      <div class="viz-grid vg-2">
+        <div class="viz-cell"><div class="viz-icon">📱</div><span>Community event / giveaway</span></div>
+        <div class="viz-cell"><div class="viz-icon">📱</div><span>Origin story / long-form post</span></div>
+      </div>
+      <div class="vz-label">Short-Form Content</div>
+      <div class="viz-grid vg-3">
+        <div class="viz-cell viz-cell-tall"><div class="viz-icon">🎬</div><span>Reel / short-form video 01</span></div>
+        <div class="viz-cell viz-cell-tall"><div class="viz-icon">🎬</div><span>Reel / short-form video 02</span></div>
+        <div class="viz-cell viz-cell-tall"><div class="viz-icon">🎬</div><span>Reel / short-form video 03</span></div>
+      </div>
+      <div class="vz-label">Analytics — Meta Business Suite</div>
+      <div class="viz-grid vg-2">
+        <div class="viz-cell"><div class="viz-icon">📊</div><span>Dashboard screenshot</span></div>
+        <div class="viz-cell"><div class="viz-icon">📊</div><span>Reach / engagement chart</span></div>
+      </div>
+      <div class="results-bar results-4">
+        <div class="result-cell"><div class="result-n">5.3<sup>K</sup></div><div class="result-lbl">Followers</div></div>
+        <div class="result-cell"><div class="result-n">520<sup>K+</sup></div><div class="result-lbl">Total Reach</div></div>
+        <div class="result-cell"><div class="result-n">100<sup>K+</sup></div><div class="result-lbl">Interactions</div></div>
+        <div class="result-cell"><div class="result-n">0→</div><div class="result-lbl">Starting Audience</div></div>
+      </div>
+      <div class="vz-label">What I Learned</div>
+      <div class="learned-row learned-3">
+        <div class="learned-card"><h4>Data tells you what works. Instinct tells you why.</h4><p>A post about a loss outperformed a highlight reel because it was honest. I learned to use data to confirm instinct, not replace it.</p></div>
+        <div class="learned-card"><h4>Tone is the hardest thing to get right.</h4><p>My highest-performing posts were written as someone who genuinely cared — not as someone managing a page. That distinction is everything.</p></div>
+        <div class="learned-card"><h4>Events turn followers into community members.</h4><p>Giveaways and polls were moments people started introducing themselves to each other in the comments. That shift is what I was building toward.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════ UPCOMING ════════ -->
+<div id="upcoming" class="section section-dark">
+  <div class="inner reveal">
+    <div class="eyebrow red" style="margin-bottom:1rem;">Upcoming</div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2px; background:rgba(200,0,30,0.08);">
+
+      <div style="background:var(--dark2); padding:3rem 2.5rem; border-top:2px solid var(--red); grid-column:1/-1;">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:1.5rem;">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--red);animation:pulse 2s ease-in-out infinite;flex-shrink:0;"></div>
+          <span style="font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--red);">In Planning</span>
+        </div>
+        <h3 style="font-family:var(--cond);font-size:clamp(32px,4vw,52px);font-weight:900;text-transform:uppercase;letter-spacing:0.01em;color:var(--cream);line-height:0.95;margin-bottom:1.25rem;">Public Game Jam<br><span style="color:var(--red);">Vietnam</span></h3>
+        <p style="font-size:15px;font-weight:300;color:var(--muted);line-height:1.8;max-width:580px;margin-bottom:2rem;">Organising one of the first public game jams in Vietnam — open to indie developers, students, and hobbyists. Working with a small team of friends to design the format, build the community around it, and make it happen.</p>
+        <div style="display:flex;gap:1.5rem;flex-wrap:wrap;">
+          <div>
+            <div style="font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:0.3rem;">Role</div>
+            <div style="font-size:13px;color:var(--muted);">Co-organiser & Community Lead</div>
+          </div>
+          <div>
+            <div style="font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:0.3rem;">Status</div>
+            <div style="font-size:13px;color:var(--muted);">Planning phase</div>
+          </div>
+          <div>
+            <div style="font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:0.3rem;">Why it matters</div>
+            <div style="font-size:13px;color:var(--muted);">Building the Vietnamese game dev community from the ground up</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ════════ EXP 02 — HMUN ════════ -->
+<div class="band">
+  <span class="band-t">Experience</span><span class="band-sep">·</span>
+  <span class="band-t">HMUN · We Are 222 · GUISE</span><span class="band-sep">·</span>
+  <span class="band-t">2021–2023</span>
+</div>
+
+<div class="band" style="background:var(--dark2); border-top: 1px solid var(--muted3);">
+  <span class="band-t" style="color:var(--muted); font-size:13px;">02 — Hanoi Model UN</span><span class="band-sep" style="color:var(--muted3);">·</span>
+  <span class="band-t" style="color:var(--muted); font-size:13px;">03 — We Are 222</span><span class="band-sep" style="color:var(--muted3);">·</span>
+  <span class="band-t" style="color:var(--muted); font-size:13px;">04 — GUISE The Musical</span>
+</div>
+
+<div id="exp-hmun" class="section section-mid">
+  <div class="exp-hero reveal">
+    <div class="exp-hero-bg"></div>
+    <div class="exp-hero-img"><span>📷 Add HMUN project cover image</span></div>
+    <div class="exp-hero-content">
+      <div class="exp-hero-num">Project 02 · Sep–Dec 2023</div>
+      <h2 class="exp-hero-title">HMUN<br><span class="red">PR & Comms</span></h2>
+      <p class="exp-hero-sub">Marketing & PR Coordinator · Facebook & Instagram · Team of 10</p>
+    </div>
+  </div>
+  <div class="exp-detail reveal">
+    <div class="exp-sidebar">
+      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Role</div><div class="exp-sidebar-val">Marketing & PR Coordinator (Under-Secretary General)</div></div>
+      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Team</div><div class="exp-sidebar-val">10-person PR department</div></div>
+      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Event</div><div class="exp-sidebar-val">HMUN Mock #18 — 2-day, 3-council conference</div></div>
+      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Platforms</div><div class="exp-sidebar-val">Facebook, Instagram</div></div>
+      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Also</div><div class="exp-sidebar-val">PR Member & Advisor across 3 annual HMUN conferences, 2021–2023</div></div>
+    </div>
+    <div class="exp-main">
+      <div class="vz-label">Campaign Posts & Comms</div>
+      <div class="viz-grid vg-3">
+        <div class="viz-cell"><div class="viz-icon">📱</div><span>Registration campaign post</span></div>
+        <div class="viz-cell"><div class="viz-icon">📱</div><span>Conference promo post</span></div>
+        <div class="viz-cell"><div class="viz-icon">📱</div><span>Post-event recap</span></div>
+      </div>
+      <div class="viz-grid vg-2">
+        <div class="viz-cell"><div class="viz-icon">🎬</div><span>Conference promo video / reel</span></div>
+        <div class="viz-cell"><div class="viz-icon">📊</div><span>Campaign analytics screenshot</span></div>
+      </div>
+      <div class="results-bar results-3">
+        <div class="result-cell"><div class="result-n">67<sup>%</sup></div><div class="result-lbl">Increase in Attendance</div></div>
+        <div class="result-cell"><div class="result-n">50<sup>+</sup></div><div class="result-lbl">Conference Participants</div></div>
+        <div class="result-cell"><div class="result-n">3</div><div class="result-lbl">Annual Conferences (2021–2023)</div></div>
+      </div>
+      <div class="vz-label">What I Learned</div>
+      <div class="learned-row learned-2">
+        <div class="learned-card"><h4>Brand consistency across a team is harder than solo work.</h4><p>Managing 10 people all writing content meant constantly re-aligning on voice and tone. I learned to create briefs and feedback loops rather than doing everything myself.</p></div>
+        <div class="learned-card"><h4>Outreach is community management before the community exists.</h4><p>Getting partners involved early meant the audience was already primed when registration opened. Building relationships before you need them is the actual skill.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════ EXP 03 — WE ARE 222 ════════ -->
+<div class="band">
+  <span class="band-t">Project 03</span><span class="band-sep">·</span>
+  <span class="band-t">We Are 222</span><span class="band-sep">·</span>
+  <span class="band-t">NGO Campaigns</span><span class="band-sep">·</span>
+  <span class="band-t">Jan–Dec 2023</span>
+</div>
+
+<div id="exp-222" class="section section-light">
+  <div class="exp-hero reveal" style="background: var(--cream2);">
+    <div class="exp-hero-bg" style="background: linear-gradient(to top, rgba(242,237,228,0.98) 0%, rgba(242,237,228,0.6) 50%, rgba(242,237,228,0.2) 100%);"></div>
+    <div class="exp-hero-img" style="background: var(--cream2);"><span style="color:rgba(200,0,30,0.3);">📷 Add We Are 222 cover image</span></div>
+    <div class="exp-hero-content">
+      <div class="exp-hero-num" style="color:var(--red);">Project 03 · Jan–Dec 2023</div>
+      <h2 class="exp-hero-title" style="color:var(--black);">We Are<br><span class="red">222</span></h2>
+      <p class="exp-hero-sub" style="color:#666;">Communications & Outreach Lead · Marketing Lead · NGO</p>
+    </div>
+  </div>
+  <div class="exp-detail reveal">
+    <div class="exp-sidebar" style="background:var(--cream2); border-right-color: rgba(0,0,0,0.08);">
+      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Roles</div><div class="exp-sidebar-val" style="color:#555;">Marketing Lead → Communications & Outreach Lead</div></div>
+      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Campaigns</div><div class="exp-sidebar-val" style="color:#555;">Chronicle of Love 2022 (book donation) · Sow a Seed 2023 (English education)</div></div>
+      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Platforms</div><div class="exp-sidebar-val" style="color:#555;">Facebook, Instagram</div></div>
+      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Location</div><div class="exp-sidebar-val" style="color:#555;">Hòa Bình Province, remote Vietnam</div></div>
+    </div>
+    <div class="exp-main" style="background:var(--cream);">
+      <div class="vz-label" style="color:rgba(200,0,30,0.7);">Campaign Content</div>
+      <div class="viz-grid vg-3" style="background:rgba(0,0,0,0.05);">
+        <div class="viz-cell" style="background:var(--cream2); color:rgba(200,0,30,0.4); border-color:rgba(200,0,30,0.15);"><div class="viz-icon">📱</div><span>Book donation campaign post</span></div>
+        <div class="viz-cell" style="background:var(--cream2); color:rgba(200,0,30,0.4); border-color:rgba(200,0,30,0.15);"><div class="viz-icon">📱</div><span>Sow a Seed 2023 post</span></div>
+        <div class="viz-cell" style="background:var(--cream2); color:rgba(200,0,30,0.4); border-color:rgba(200,0,30,0.15);"><div class="viz-icon">📰</div><span>VTV / VNA media coverage</span></div>
+      </div>
+      <div class="viz-grid vg-2" style="background:rgba(0,0,0,0.05);">
+        <div class="viz-cell" style="background:var(--cream2); color:rgba(200,0,30,0.4); border-color:rgba(200,0,30,0.15);"><div class="viz-icon">🎬</div><span>Campaign recap video</span></div>
+        <div class="viz-cell" style="background:var(--cream2); color:rgba(200,0,30,0.4); border-color:rgba(200,0,30,0.15);"><div class="viz-icon">📸</div><span>Field photos from Hòa Bình</span></div>
+      </div>
+      <div class="results-bar results-3">
+        <div class="result-cell"><div class="result-n">20<sup>+</sup></div><div class="result-lbl">Media Partners</div></div>
+        <div class="result-cell"><div class="result-n">500<sup>+</sup></div><div class="result-lbl">Books Donated</div></div>
+        <div class="result-cell"><div class="result-n">2×</div><div class="result-lbl">National TV & Press</div></div>
+      </div>
+      <div class="vz-label" style="color:rgba(200,0,30,0.7);">What I Learned</div>
+      <div class="learned-row learned-2" style="background:rgba(0,0,0,0.05);">
+        <div class="learned-card" style="background:var(--cream2);"><h4 style="color:var(--black);">Purpose-driven content earns attention differently.</h4><p style="color:#666;">Writing for a cause means the audience has to believe you mean it. That discipline made me a better writer for everything else.</p></div>
+        <div class="learned-card" style="background:var(--cream2);"><h4 style="color:var(--black);">Media outreach is a numbers and relationships game.</h4><p style="color:#666;">Reaching 20+ outlets taught me that a few will respond — and VTV coverage changed the campaign's visibility overnight.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════ EXP 04 — GUISE ════════ -->
+<div class="band">
+  <span class="band-t">Project 04</span><span class="band-sep">·</span>
+  <span class="band-t">GUISE The Musical</span><span class="band-sep">·</span>
+  <span class="band-t">Scriptwriting & Production</span><span class="band-sep">·</span>
+  <span class="band-t">2022–2023</span>
+</div>
+
+<div id="exp-guise" class="section section-dark">
+  <div class="exp-hero reveal">
+    <div class="exp-hero-bg"></div>
+    <div class="exp-hero-img"><span>📷 Add GUISE production photo</span></div>
+    <div class="exp-hero-content">
+      <div class="exp-hero-num">Project 04 · Nov 2022–Sep 2023</div>
+      <h2 class="exp-hero-title">GUISE<br><span class="red">The Musical</span></h2>
+      <p class="exp-hero-sub">Scriptwriter & Head of Backstage Operations · 700+ Live Audience</p>
+    </div>
+  </div>
+  <div class="exp-detail reveal">
+    <div class="exp-sidebar">
+      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Roles</div><div class="exp-sidebar-val">Scriptwriter & Head of Backstage Operations</div></div>
+      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Team</div><div class="exp-sidebar-val">20-person backstage crew</div></div>
+      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Production</div><div class="exp-sidebar-val">Original English-language musical written, produced and performed entirely by students</div></div>
+      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Collaborators</div><div class="exp-sidebar-val">Director, composer, lyricist, 700+ live audience</div></div>
+    </div>
+    <div class="exp-main">
+      <div class="vz-label">Production Work</div>
+      <div class="viz-grid vg-2">
+        <div class="viz-cell viz-cell-tall"><div class="viz-icon">🎭</div><span>Production / performance photo</span></div>
+        <div class="viz-cell viz-cell-tall"><div class="viz-icon">📄</div><span>Script excerpt or writing sample</span></div>
+      </div>
+      <div class="viz-grid vg-3">
+        <div class="viz-cell viz-cell-short"><div class="viz-icon">🎬</div><span>Trailer or video clip</span></div>
+        <div class="viz-cell viz-cell-short"><div class="viz-icon">🎭</div><span>Backstage photo</span></div>
+        <div class="viz-cell viz-cell-short"><div class="viz-icon">🎭</div><span>Behind the scenes</span></div>
+      </div>
+      <div class="results-bar results-2">
+        <div class="result-cell"><div class="result-n">700<sup>+</sup></div><div class="result-lbl">Live Audience</div></div>
+        <div class="result-cell"><div class="result-n">1</div><div class="result-lbl">Original Script — Written from Scratch</div></div>
+      </div>
+      <div class="vz-label">What I Learned</div>
+      <div class="learned-row learned-2">
+        <div class="learned-card"><h4>Writing for performance is writing for a live community.</h4><p>A script has to land in real time. Every line had to carry weight on stage — that pressure taught me economy of language I bring to everything I write now.</p></div>
+        <div class="learned-card"><h4>Logistics is community management with physical stakes.</h4><p>Coordinating 20 people backstage during a live show is the same skill as managing an online community — clear communication, pre-emptive planning, calm under pressure.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- UPCOMING -->
+<div class="band">
+  <span class="band-t">Upcoming</span><span class="band-sep">·</span>
+  <span class="band-t">What's Next</span>
+</div>
+
+<section id="upcoming" class="section section-dark">
+  <div class="inner reveal">
+    <div class="eyebrow" style="margin-bottom:1rem;">Coming Soon</div>
+    <h2 class="display" style="margin-bottom:2.5rem;">What's<br><span class="red">Next</span></h2>
+    <div class="upcoming-card">
+      <div class="upcoming-tag">🎮 Game Jam · Vietnam · 2025</div>
+      <h3 class="upcoming-title">Public Game Jam — Vietnam</h3>
+      <p class="upcoming-body">Currently planning and co-hosting one of the first public game jams in Vietnam — open to developers, designers, and players across the country. More details coming soon.</p>
+      <div class="upcoming-status">
+        <span class="status-dot"></span>
+        <span>In planning</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section id="closing" class="section">
+  <div class="inner reveal">
+    <div class="closing-grid">
+      <div class="closing-left">
+        <div class="eyebrow red" style="margin-bottom:1rem;">Let's Work Together</div>
+        <h2 class="display">Ready<br>When<br><span class="red">You Are</span></h2>
+        <p class="body-text" style="color:var(--muted);">I'm applying for the RED Summer Internship at CD PROJEKT RED — Community and Social Media Intern, July–September 2025, Warsaw. If you'd like to know more about any of the work shown here, I'd love to talk.</p>
+      </div>
+      <div class="closing-right">
+        <div class="c-item"><div class="c-label">Email</div><div class="c-val"><a href="mailto:luyenphuonglinh1011@gmail.com">luyenphuonglinh1011@gmail.com</a></div></div>
+        <div class="c-item"><div class="c-label">LinkedIn</div><div class="c-val"><a href="https://linkedin.com/in/phuong-linh-luyen">linkedin.com/in/phuong-linh-luyen</a></div></div>
+        <div class="c-item"><div class="c-label">Currently based</div><div class="c-val">Milan, Italy</div></div>
+        <div class="c-item"><div class="c-label">Available</div><div class="c-val">July – September 2025 · Warsaw</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>PHUONG LINH LUYEN — COMMUNITY PORTFOLIO 2024</span>
+  <span>CDPR APPLICATION ↗</span>
+</footer>
+
+<script>
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 60); });
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.06 });
+document.querySelectorAll('.reveal').forEach(el => {
+  if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('visible');
+  else obs.observe(el);
+});
+</script>
+</body>
+</html>
