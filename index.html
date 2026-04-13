@@ -427,6 +427,7 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
     <a href="#whatido">What I Do</a>
     <a href="#projects">Projects</a>
     <a href="#experience">Experience</a>
+    <a href="#writing">Writing</a>
     <a href="#closing">Contact</a>
   </div>
 
@@ -1543,7 +1544,170 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
   </div>
 
   <div style="padding:2rem 3rem;">
-    <div style="font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.9);margin-bottom:1.25rem;">Campaign Posts</div>
+    <div style="font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.9);margin-bottom:1.25rem;">Content Calendar & Campaign Planning</div>
+
+    <!-- CHRONICLE OF LOVE — GOOGLE SHEETS MOCKUP -->
+    <div style="background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 20px rgba(0,0,0,0.15);margin-bottom:2rem;font-family:-apple-system,'Segoe UI',sans-serif;">
+
+      <!-- Chrome bar -->
+      <div style="background:#f1f3f4;padding:8px 14px;display:flex;align-items:center;gap:10px;border-bottom:1px solid #e0e0e0;">
+        <div style="display:flex;gap:5px;">
+          <div style="width:10px;height:10px;border-radius:50%;background:#ff5f57;"></div>
+          <div style="width:10px;height:10px;border-radius:50%;background:#febc2e;"></div>
+          <div style="width:10px;height:10px;border-radius:50%;background:#28c840;"></div>
+        </div>
+        <div style="flex:1;background:#fff;border-radius:20px;padding:4px 12px;font-size:11px;color:#5f6368;border:1px solid #ddd;">docs.google.com/spreadsheets — Chronicle of Love · We Are 222 · Campaign 2022</div>
+      </div>
+
+      <!-- Sheets toolbar -->
+      <div style="background:#fff;padding:6px 14px;display:flex;align-items:center;gap:12px;border-bottom:1px solid #e8eaed;">
+        <svg width="18" height="18" viewBox="0 0 24 24" style="flex-shrink:0;"><path fill="#34a853" d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6H6z"/><path fill="#188038" d="M18 8h-4V4l4 4z"/><path fill="#fff" d="M8 12h8v1.5H8zm0 3h8v1.5H8zm0 3h5v1.5H8z"/></svg>
+        <div style="font-size:14px;font-weight:500;color:#202124;">Chronicle of Love — We Are 222 Campaign</div>
+        <div style="margin-left:auto;display:flex;gap:6px;align-items:center;font-size:11px;">
+          <span style="padding:3px 10px;background:#1a73e8;color:#fff;border-radius:4px;font-weight:500;">Share</span>
+        </div>
+      </div>
+
+      <!-- Tab bar — ACTIVE: Total quan (Strategy) -->
+      <div style="background:#f8f9fa;border-bottom:1px solid #e0e0e0;padding:0 14px;display:flex;gap:0;align-items:flex-end;overflow-x:auto;scrollbar-width:none;">
+        <div id="tab-tong" style="background:#fff;border:1px solid #e0e0e0;border-bottom:2px solid #1a73e8;border-radius:6px 6px 0 0;padding:6px 16px;font-size:11px;color:#1a73e8;font-weight:600;cursor:pointer;white-space:nowrap;margin-right:2px;" onclick="showTab('tong')">📊 Strategy</div>
+        <div id="tab-lich" style="background:transparent;border:1px solid transparent;border-radius:6px 6px 0 0;padding:6px 16px;font-size:11px;color:#5f6368;cursor:pointer;white-space:nowrap;margin-right:2px;" onclick="showTab('lich')">📅 Schedule</div>
+        <div id="tab-fb" style="background:transparent;border:1px solid transparent;border-radius:6px 6px 0 0;padding:6px 16px;font-size:11px;color:#5f6368;cursor:pointer;white-space:nowrap;margin-right:2px;" onclick="showTab('fb')">📘 Facebook</div>
+        <div id="tab-ig" style="background:transparent;border:1px solid transparent;border-radius:6px 6px 0 0;padding:6px 16px;font-size:11px;color:#5f6368;cursor:pointer;white-space:nowrap;margin-right:2px;" onclick="showTab('ig')">📸 Instagram</div>
+        <div id="tab-other" style="background:transparent;border:1px solid transparent;border-radius:6px 6px 0 0;padding:6px 16px;font-size:11px;color:#5f6368;cursor:pointer;white-space:nowrap;" onclick="showTab('other')">📋 Others</div>
+      </div>
+
+      <!-- SHEET CONTENT: Total quan (Strategy) -->
+      <div id="sheet-tong" style="overflow-x:auto;">
+        <table style="width:100%;border-collapse:collapse;font-size:12px;">
+          <tbody>
+            <!-- Section: Mục tiêu -->
+            <tr style="background:#e8f5e9;">
+              <td style="width:28px;background:#f8f9fa;border:1px solid #e0e0e0;padding:4px 8px;text-align:center;color:#80868b;font-size:10px;">1</td>
+              <td colspan="2" style="border:1px solid #e0e0e0;padding:6px 12px;font-weight:700;color:#137333;font-size:12px;">Campaign Goals</td>
+              <td colspan="2" style="border:1px solid #e0e0e0;padding:6px 12px;font-weight:700;color:#137333;font-size:12px;">Media Targets</td>
+              <td colspan="2" style="border:1px solid #e0e0e0;padding:6px 12px;font-weight:700;color:#137333;font-size:12px;">Unique Selling Points</td>
+            </tr>
+            <tr>
+              <td style="width:28px;background:#f8f9fa;border:1px solid #e0e0e0;padding:4px 8px;text-align:center;color:#80868b;font-size:10px;">2</td>
+              <td colspan="2" style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">Open member recruitment</td>
+              <td style="border:1px solid #e0e0e0;padding:5px 12px;color:#5f6368;font-size:11px;">Total</td>
+              <td style="border:1px solid #e0e0e0;padding:5px 12px;color:#5f6368;font-size:11px;">Per post</td>
+              <td colspan="2" style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">Donate books, receive gifts</td>
+            </tr>
+            <tr style="background:#fafafa;">
+              <td style="width:28px;background:#f8f9fa;border:1px solid #e0e0e0;padding:4px 8px;text-align:center;color:#80868b;font-size:10px;">3</td>
+              <td colspan="2" style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">120 applications</td>
+              <td style="border:1px solid #e0e0e0;padding:5px 12px;font-weight:600;color:#1a73e8;">10,000 page likes</td>
+              <td style="border:1px solid #e0e0e0;padding:5px 12px;color:#5f6368;font-size:11px;">180 reacts · 250 comments · 60 shares</td>
+              <td colspan="2" style="border:1px solid #e0e0e0;padding:5px 12px;color:#5f6368;font-size:11px;">Donate books directly to those in difficult circumstances</td>
+            </tr>
+            <tr>
+              <td style="width:28px;background:#f8f9fa;border:1px solid #e0e0e0;padding:4px 8px;text-align:center;color:#80868b;font-size:10px;">4</td>
+              <td colspan="2" style="border:1px solid #e0e0e0;padding:5px 12px;color:#5f6368;font-size:11px;">95% pass application round</td>
+              <td style="border:1px solid #e0e0e0;padding:5px 12px;font-weight:600;color:#1a73e8;">xx,000 reach</td>
+              <td style="border:1px solid #e0e0e0;padding:5px 12px;color:#5f6368;font-size:11px;">3–4 posts / week</td>
+              <td colspan="2" style="border:1px solid #e0e0e0;padding:5px 12px;"></td>
+            </tr>
+            <!-- Spacer -->
+            <tr style="background:#fff3e0;">
+              <td style="width:28px;background:#f8f9fa;border:1px solid #e0e0e0;padding:4px 8px;text-align:center;color:#80868b;font-size:10px;">6</td>
+              <td colspan="2" style="border:1px solid #e0e0e0;padding:6px 12px;font-weight:700;color:#e65100;">Theme & Message</td>
+              <td colspan="2" style="border:1px solid #e0e0e0;padding:6px 12px;font-weight:700;color:#e65100;">Keywords</td>
+              <td colspan="2" style="border:1px solid #e0e0e0;padding:6px 12px;font-weight:700;color:#e65100;">Call to Action</td>
+            </tr>
+            <tr style="background:#fafafa;">
+              <td style="width:28px;background:#f8f9fa;border:1px solid #e0e0e0;padding:4px 8px;text-align:center;color:#80868b;font-size:10px;">7</td>
+              <td colspan="2" style="border:1px solid #e0e0e0;padding:5px 12px;font-style:italic;color:#202124;">Chronicle of Love · Charity · Social impact</td>
+              <td style="border:1px solid #e0e0e0;padding:5px 12px;"><span style="background:#e8f0fe;color:#1967d2;border-radius:4px;padding:2px 7px;font-size:11px;">Sách</span></td>
+              <td style="border:1px solid #e0e0e0;padding:5px 12px;"><span style="background:#fce8e6;color:#c5221f;border-radius:4px;padding:2px 7px;font-size:11px;">Tình Yêu</span></td>
+              <td colspan="2" style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">Call on people to donate books in exchange for gifts</td>
+            </tr>
+            <tr>
+              <td style="width:28px;background:#f8f9fa;border:1px solid #e0e0e0;padding:4px 8px;text-align:center;color:#80868b;font-size:10px;">9</td>
+              <td colspan="6" style="border:1px solid #e0e0e0;padding:5px 12px;color:#5f6368;font-style:italic;font-size:11px;">Carrying kindness to its destination — gifting books to underprivileged children</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- SHEET CONTENT: Lịch đăng (hidden by default) -->
+      <div id="sheet-lich" style="display:none;overflow-x:auto;">
+        <table style="width:100%;border-collapse:collapse;font-size:12px;">
+          <thead>
+            <tr style="background:#e8eaed;">
+              <td style="width:28px;background:#f8f9fa;border:1px solid #e0e0e0;padding:4px 8px;"></td>
+              <th style="border:1px solid #e0e0e0;padding:6px 12px;text-align:left;font-size:11px;font-weight:600;color:#202124;white-space:nowrap;">Date</th>
+              <th style="border:1px solid #e0e0e0;padding:6px 12px;text-align:left;font-size:11px;font-weight:600;color:#202124;white-space:nowrap;">Platform</th>
+              <th style="border:1px solid #e0e0e0;padding:6px 12px;text-align:left;font-size:11px;font-weight:600;color:#202124;white-space:nowrap;">Post Type</th>
+              <th style="border:1px solid #e0e0e0;padding:6px 12px;text-align:left;font-size:11px;font-weight:600;color:#202124;min-width:180px;">Caption</th>
+              <th style="border:1px solid #e0e0e0;padding:6px 12px;text-align:left;font-size:11px;font-weight:600;color:#202124;white-space:nowrap;">Visual</th>
+              <th style="border:1px solid #e0e0e0;padding:6px 12px;text-align:left;font-size:11px;font-weight:600;color:#202124;white-space:nowrap;">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td style="background:#f8f9fa;border:1px solid #e0e0e0;padding:4px 8px;text-align:center;color:#80868b;font-size:10px;">1</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">[ Date ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;"><span style="background:#e8f0fe;color:#1967d2;border-radius:4px;padding:2px 7px;font-size:11px;font-weight:500;">Facebook</span></td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">Campaign Launch</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#5f6368;">[ Caption ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#5f6368;">[ Visual ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;"><span style="background:#e6f4ea;color:#137333;border-radius:4px;padding:2px 7px;font-size:11px;font-weight:500;">✓ Published</span></td></tr>
+            <tr style="background:#fafafa;"><td style="background:#f8f9fa;border:1px solid #e0e0e0;padding:4px 8px;text-align:center;color:#80868b;font-size:10px;">2</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">[ Date ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;"><span style="background:#fce8e6;color:#c5221f;border-radius:4px;padding:2px 7px;font-size:11px;font-weight:500;">Instagram</span></td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">Awareness Post</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#5f6368;">[ Caption ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#5f6368;">[ Visual ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;"><span style="background:#e6f4ea;color:#137333;border-radius:4px;padding:2px 7px;font-size:11px;font-weight:500;">✓ Published</span></td></tr>
+            <tr><td style="background:#f8f9fa;border:1px solid #e0e0e0;padding:4px 8px;text-align:center;color:#80868b;font-size:10px;">3</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">[ Date ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;"><span style="background:#e8f0fe;color:#1967d2;border-radius:4px;padding:2px 7px;font-size:11px;font-weight:500;">Facebook</span></td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">Book Donation Update</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#5f6368;">[ Caption ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#5f6368;">[ Visual ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;"><span style="background:#fef7e0;color:#b06000;border-radius:4px;padding:2px 7px;font-size:11px;font-weight:500;">⏳ Scheduled</span></td></tr>
+            <tr style="background:#fafafa;"><td style="background:#f8f9fa;border:1px solid #e0e0e0;padding:4px 8px;text-align:center;color:#80868b;font-size:10px;">4</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">[ Date ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;"><span style="background:#fce8e6;color:#c5221f;border-radius:4px;padding:2px 7px;font-size:11px;font-weight:500;">Instagram</span></td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">Story — Call to Action</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#5f6368;">[ Caption ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#5f6368;">[ Visual ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;"><span style="background:#e8f0fe;color:#1967d2;border-radius:4px;padding:2px 7px;font-size:11px;font-weight:500;">✏️ Draft</span></td></tr>
+            <tr><td style="background:#f8f9fa;border:1px solid #e0e0e0;padding:4px 8px;text-align:center;color:#80868b;font-size:10px;">5</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">[ Date ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;"><span style="background:#e8f0fe;color:#1967d2;border-radius:4px;padding:2px 7px;font-size:11px;font-weight:500;">Facebook</span></td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">VTV / VNA Coverage Share</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#5f6368;">[ Caption ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#5f6368;">[ Visual ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;"><span style="background:#e6f4ea;color:#137333;border-radius:4px;padding:2px 7px;font-size:11px;font-weight:500;">✓ Published</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- SHEET CONTENT: Facebook (hidden) -->
+      <div id="sheet-fb" style="display:none;overflow-x:auto;">
+        <table style="width:100%;border-collapse:collapse;font-size:12px;">
+          <thead><tr style="background:#e8eaed;"><td style="width:28px;background:#f8f9fa;border:1px solid #e0e0e0;padding:4px 8px;"></td><th style="border:1px solid #e0e0e0;padding:6px 12px;font-size:11px;font-weight:600;color:#202124;text-align:left;">Date</th><th style="border:1px solid #e0e0e0;padding:6px 12px;font-size:11px;font-weight:600;color:#202124;text-align:left;">Post Type</th><th style="border:1px solid #e0e0e0;padding:6px 12px;font-size:11px;font-weight:600;color:#202124;text-align:left;min-width:200px;">Caption</th><th style="border:1px solid #e0e0e0;padding:6px 12px;font-size:11px;font-weight:600;color:#202124;text-align:left;">Reacts</th><th style="border:1px solid #e0e0e0;padding:6px 12px;font-size:11px;font-weight:600;color:#202124;text-align:left;">Comments</th><th style="border:1px solid #e0e0e0;padding:6px 12px;font-size:11px;font-weight:600;color:#202124;text-align:left;">Shares</th></tr></thead>
+          <tbody>
+            <tr><td style="background:#f8f9fa;border:1px solid #e0e0e0;padding:4px 8px;text-align:center;color:#80868b;font-size:10px;">1</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">[ Date ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">Campaign Launch</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#5f6368;">[ Caption ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">[ # ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">[ # ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">[ # ]</td></tr>
+            <tr style="background:#fafafa;"><td style="background:#f8f9fa;border:1px solid #e0e0e0;padding:4px 8px;text-align:center;color:#80868b;font-size:10px;">2</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">[ Date ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">Book Donation Update</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#5f6368;">[ Caption ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">[ # ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">[ # ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">[ # ]</td></tr>
+            <tr><td style="background:#f8f9fa;border:1px solid #e0e0e0;padding:4px 8px;text-align:center;color:#80868b;font-size:10px;">3</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">[ Date ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">Media Coverage Share</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#5f6368;">[ Caption ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">[ # ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">[ # ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">[ # ]</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- SHEET CONTENT: Instagram (hidden) -->
+      <div id="sheet-ig" style="display:none;overflow-x:auto;">
+        <table style="width:100%;border-collapse:collapse;font-size:12px;">
+          <thead><tr style="background:#e8eaed;"><td style="width:28px;background:#f8f9fa;border:1px solid #e0e0e0;padding:4px 8px;"></td><th style="border:1px solid #e0e0e0;padding:6px 12px;font-size:11px;font-weight:600;color:#202124;text-align:left;">Date</th><th style="border:1px solid #e0e0e0;padding:6px 12px;font-size:11px;font-weight:600;color:#202124;text-align:left;">Type</th><th style="border:1px solid #e0e0e0;padding:6px 12px;font-size:11px;font-weight:600;color:#202124;text-align:left;min-width:200px;">Caption / Copy</th><th style="border:1px solid #e0e0e0;padding:6px 12px;font-size:11px;font-weight:600;color:#202124;text-align:left;">Likes</th><th style="border:1px solid #e0e0e0;padding:6px 12px;font-size:11px;font-weight:600;color:#202124;text-align:left;">Reach</th></tr></thead>
+          <tbody>
+            <tr><td style="background:#f8f9fa;border:1px solid #e0e0e0;padding:4px 8px;text-align:center;color:#80868b;font-size:10px;">1</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">[ Date ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;"><span style="background:#fce8e6;color:#c5221f;border-radius:4px;padding:2px 7px;font-size:11px;">Post</span></td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#5f6368;">[ Caption ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">[ # ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">[ # ]</td></tr>
+            <tr style="background:#fafafa;"><td style="background:#f8f9fa;border:1px solid #e0e0e0;padding:4px 8px;text-align:center;color:#80868b;font-size:10px;">2</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">[ Date ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;"><span style="background:#f3e8fd;color:#7b1fa2;border-radius:4px;padding:2px 7px;font-size:11px;">Story</span></td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#5f6368;">[ Caption ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">[ # ]</td><td style="border:1px solid #e0e0e0;padding:5px 12px;color:#202124;">[ # ]</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- SHEET CONTENT: Others (hidden) -->
+      <div id="sheet-other" style="display:none;padding:24px;text-align:center;color:#5f6368;font-size:12px;">
+        <div style="font-size:24px;margin-bottom:8px;">📋</div>
+        Other platforms & outreach tracking — media contacts, partnership notes
+      </div>
+
+    </div>
+
+    <script>
+    function showTab(tab) {
+      ['tong','lich','fb','ig','other'].forEach(t => {
+        document.getElementById('sheet-'+t).style.display = t === tab ? 'block' : 'none';
+        const el = document.getElementById('tab-'+t);
+        if (t === tab) {
+          el.style.background = '#fff';
+          el.style.borderColor = '#e0e0e0';
+          el.style.borderBottomColor = '#1a73e8';
+          el.style.color = '#1a73e8';
+          el.style.fontWeight = '600';
+        } else {
+          el.style.background = 'transparent';
+          el.style.borderColor = 'transparent';
+          el.style.color = '#5f6368';
+          el.style.fontWeight = '400';
+        }
+      });
+    }
+    </script>
+
+        <div style="font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.9);margin-bottom:1.25rem;">Campaign Posts</div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:2rem;">
       <div style="background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.1);">
         <div style="padding:10px 12px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #f0f2f5;">
@@ -1700,13 +1864,14 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
   </div>
 </div>
 
-  <!-- EXPERIENCE TRANSITION -->
-<div id="experience" style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--dark);position:relative;overflow:hidden;">
-  <div style="position:absolute;font-family:var(--cond);font-weight:900;font-size:32vw;color:transparent;-webkit-text-stroke:1px rgba(200,0,30,0.04);user-select:none;line-height:1;">EXP</div>
+
+<!-- SELECTED WRITING TRANSITION -->
+<div id="writing" style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--black);position:relative;overflow:hidden;">
+  <div style="position:absolute;font-family:var(--cond);font-weight:900;font-size:28vw;color:transparent;-webkit-text-stroke:1px rgba(200,0,30,0.05);user-select:none;line-height:1;">WRI</div>
   <div style="position:relative;z-index:1;text-align:center;" class="reveal">
-    <div style="font-family:var(--mono);font-size:11px;letter-spacing:0.25em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:1rem;"></div>
-    <div style="font-family:var(--cond);font-weight:900;font-size:clamp(52px,9vw,110px);text-transform:uppercase;line-height:0.88;letter-spacing:-0.02em;color:var(--cream);">EXPERI<span style="color:var(--red);">ENCE</span></div>
-    <p style="font-family:var(--serif);font-style:italic;font-size:18px;color:var(--muted);margin-top:2rem;">HMUN · We Are 222 · GUISE The Musical</p>
+    <div style="font-family:var(--mono);font-size:11px;letter-spacing:0.25em;text-transform:uppercase;color:rgba(200,0,30,0.7);margin-bottom:1rem;">05 — Other Works</div>
+    <div style="font-family:var(--cond);font-weight:900;font-size:clamp(52px,9vw,110px);text-transform:uppercase;line-height:0.88;letter-spacing:-0.02em;color:var(--cream);">SELECTED<br><span style="color:var(--red);">WRITING</span></div>
+    <p style="font-family:var(--serif);font-style:italic;font-size:18px;color:var(--muted);margin-top:2rem;">Character analysis · Show & game essays · Personal takes</p>
   </div>
   <div style="position:absolute;bottom:3rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;">
     <span style="font-family:var(--mono);font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted2);">Scroll</span>
@@ -1714,19 +1879,175 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
   </div>
 </div>
 
-<!--SELECTED WRITING-->
-<div id="experience" style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--dark);position:relative;overflow:hidden;">
-  <div style="position:absolute;font-family:var(--cond);font-weight:900;font-size:32vw;color:transparent;-webkit-text-stroke:1px rgba(200,0,30,0.04);user-select:none;line-height:1;">SEL</div>
-  <div style="position:relative;z-index:1;text-align:center;" class="reveal">
-    <div style="font-family:var(--mono);font-size:11px;letter-spacing:0.25em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:1rem;"></div>
-    <div style="font-family:var(--cond);font-weight:900;font-size:clamp(52px,9vw,110px);text-transform:uppercase;line-height:0.88;letter-spacing:-0.02em;color:var(--cream);">ECTED<span style="color:var(--red);">WRITING</span></div>
-    <p style="font-family:var(--serif);font-style:italic;font-size:18px;color:var(--muted);margin-top:2rem;">HMUN · We Are 222 · GUISE The Musical</p>
+<!-- SELECTED WRITING SECTION -->
+<section class="section section-dark">
+  <div class="inner reveal">
+    <div class="eyebrow red" style="margin-bottom:0.75rem;">Selected Writing</div>
+    <h2 class="display" style="margin-bottom:0.5rem;">Character<br><span class="red">Analysis</span></h2>
+    <p style="font-size:14px;font-weight:300;color:rgba(242,237,228,0.75);line-height:1.7;max-width:560px;margin-bottom:3rem;">I write about fictional characters the way others write about real people — with genuine investment in what makes them work. These are personal essays and analyses from shows and games I care about.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(200,0,30,0.08);">
+
+      <!-- WRITING CARD 1: SPAIN -->
+      <div style="background:var(--dark2);cursor:pointer;transition:background 0.2s;" onclick="openModal('spain')" onmouseover="this.style.background='#1e1e1e'" onmouseout="this.style.background='var(--dark2)'">
+        <div style="padding:2rem;">
+          <div style="font-family:var(--mono);font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--red);margin-bottom:0.75rem;">Character Analysis</div>
+          <div style="font-family:var(--cond);font-size:22px;font-weight:700;text-transform:uppercase;color:var(--cream);line-height:1.1;margin-bottom:0.4rem;">Spain</div>
+          <div style="font-size:12px;font-weight:300;color:rgba(242,237,228,0.5);margin-bottom:1.5rem;">Hetalia: Axis Powers</div>
+          <div style="border-left:2px solid var(--red);padding-left:1rem;margin-bottom:1.5rem;">
+            <p style="font-family:var(--serif);font-style:italic;font-size:13px;color:rgba(242,237,228,0.65);line-height:1.7;">"The sunniest people are sometimes carrying the weight that no one around them thinks to ask about."</p>
+          </div>
+          <div style="font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(200,0,30,0.7);display:flex;align-items:center;gap:6px;">
+            <span>Read more →</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- WRITING CARD 2: OPERA O -->
+      <div style="background:var(--dark2);border-left:1px solid rgba(200,0,30,0.1);cursor:pointer;transition:background 0.2s;" onclick="openModal('opera')" onmouseover="this.style.background='#1e1e1e'" onmouseout="this.style.background='var(--dark2)'">
+        <div style="padding:2rem;">
+          <div style="font-family:var(--mono);font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--red);margin-bottom:0.75rem;">Character Analysis</div>
+          <div style="font-family:var(--cond);font-size:22px;font-weight:700;text-transform:uppercase;color:var(--cream);line-height:1.1;margin-bottom:0.4rem;">Opera O</div>
+          <div style="font-size:12px;font-weight:300;color:rgba(242,237,228,0.5);margin-bottom:1.5rem;">Umamusume: Pretty Derby</div>
+          <div style="border-left:2px solid var(--red);padding-left:1rem;margin-bottom:1.5rem;">
+            <p style="font-family:var(--serif);font-style:italic;font-size:12px;color:rgba(242,237,228,0.65);line-height:1.7;">"Hear me, knights! Young Werthers who seek to shatter my golden age! Stand proud! For you have the privilege of falling before me and becoming yet another page in the tale of my supremacy."</p>
+          </div>
+          <div style="font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(200,0,30,0.7);display:flex;align-items:center;gap:6px;">
+            <span>Read more →</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- WRITING CARD 3: PLACEHOLDER -->
+      <div style="background:var(--dark2);border-left:1px solid rgba(200,0,30,0.1);padding:2rem;">
+        <div style="font-family:var(--mono);font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:rgba(200,0,30,0.3);margin-bottom:0.75rem;">Character Analysis</div>
+        <div style="font-family:var(--cond);font-size:22px;font-weight:700;text-transform:uppercase;color:rgba(242,237,228,0.15);line-height:1.1;margin-bottom:0.4rem;">Coming Soon</div>
+        <div style="font-size:12px;font-weight:300;color:rgba(242,237,228,0.2);margin-bottom:1.5rem;">[ Show / Game ]</div>
+        <div style="border-left:2px solid rgba(200,0,30,0.15);padding-left:1rem;">
+          <p style="font-family:var(--serif);font-style:italic;font-size:13px;color:rgba(242,237,228,0.2);line-height:1.7;">More writing coming soon.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <script>
+    const writings = {
+      spain: {
+        tag: 'Character Analysis',
+        title: 'Spain',
+        source: 'Hetalia: Axis Powers',
+        quote: '"The sunniest people are sometimes carrying the weight that no one around them thinks to ask about."',
+        body: `<p>There is a recurring tendency in fan works to reduce Spain to a single dimension: the eternally cheerful, unconditionally kind nation who smiles through everything. While that reading is not wrong, it is deeply incomplete. Spain is not a saint. He is selective, particular, and quietly petty — and the smile is a deliberate choice, not a reflection of his inner state.</p>
+
+<p>He openly states that he hates conflict, and yet chooses to frame something as devastating as his own nation's civil war as a kind of festival. He knows. He is hurt. The composure is intentional.</p>
+
+<p>What drives him is comfort, pleasure, and the specific things he genuinely loves — good food, good weather, the small rituals of a life well-lived. Anything that disrupts that ease is, to him, a genuine imposition. He is not endlessly accommodating; he simply picks his battles carefully.</p>
+
+<p>He carries real grudges — most notably against England and France — and the animosity is genuine, even if it never spills outward. He controls it. But it is there.</p>
+
+<p>His dynamic with Romano is also frequently misread. Spain's behaviour around Romano — the clinginess, the relentlessness, the refusal to let things go unaddressed — is specific to Romano alone. Romano wears everything on the surface: his frustrations, his discomfort, his emotions. There is very little concealment. Spain, by contrast, hides everything behind a composed exterior — smiling when he is tired, smiling when he is sick, smiling when he is close to breaking. Romano's transparency seems to matter to him in a way he cannot easily explain or replicate.</p>
+
+<p>There is also something worth naming about how Spain functions in relation to others: he is drawn, instinctively, to people who seem to need something. A new nation, a difficult person, someone closed off — he moves toward them. He extends a hand. It reads more like a gut conviction that something needs to be done, and that he is the one to do it.</p>
+
+<p>Paired with this is a provider's mentality that I find genuinely endearing. He wants to be useful to the people he cares about. He wants to feed them, take care of them, make sure no one around him goes without. There is a real warmth in that — and also, if you sit with it long enough, something quietly melancholy.</p>
+
+<p>Because behind all of it — the generosity, the composure, the cheerfulness — there is something unresolved that Spain never puts into words. Something that the smile is working very hard to cover.</p>
+
+<p>In that sense, he reminds me of Russia — another character whose outward expression tells only part of the story. The difference is that Spain's warmth is genuine. But genuine warmth and inner pain are not mutually exclusive. If anything, that combination is what makes him worth writing about.</p>`
+      },
+      opera: {
+        tag: 'Character Analysis',
+        title: 'Opera O',
+        source: 'Umamusume: Pretty Derby',
+        quote: '"Hear me, knights! Young Werthers who seek to shatter my golden age! Stand proud! For you have the privilege of falling before me and becoming yet another page in the tale of my supremacy."',
+        body: `<p>Opera O is, without question, a narcissist. But she practices a very specific and genuinely fascinating variant of it — one that sets her apart from nearly every other character who fits that label.</p>
+
+<p>Most narcissists elevate themselves by diminishing others. Opera O does the opposite. She lifts everyone around her, because her greatness only means something when measured against greatness. A dim bulb is technically the brightest light in a room full of dead ones. But to be the most radiant among a room full of blazing stagelights — that is an achievement worth having. That logic is not delusion. It is, in its own way, a profound respect for competition.</p>
+
+<p>The moment that crystallised this for me was her "Brava" during Pokke's final push. It is such a small thing — a single word, barely a second of screen time — and yet it does more for her character than entire dialogue scenes could. To see a rival break through their ceiling, close the gap, chase her down to the final stretch — and for Opera O's response to be pride and exhilaration rather than anxiety or contempt — that is not the behaviour of someone threatened by excellence. It is the behaviour of someone who genuinely wanted the race to be worth winning.</p>
+
+<p>She frames her whole existence as a grand performance, and her rivals are not enemies. They are the cast. Their growth is, in her own words, "a chapter in her glorious play." There is something almost generous in that worldview — a recognition that she needs worthy opponents the way a stage needs light.</p>
+
+<p>What makes this even more layered is the real history behind her. The actual Opera O — the horse — was extraordinarily successful and deeply unpopular for it. Crowds threw rubbish at her after wins. The treatment worsened after losses. Her era ended in circumstances that were, by most accounts, unkind.</p>
+
+<p>Umamusume made a deliberate choice to reimagine her. To take a figure who was denied the recognition her record deserved and rebuild her as someone who receives, fully and unapologetically, the reverence of a queen. There is something quietly corrective about that — a sense that the creative team felt she had been wronged, and wanted to give her, at least in this form, the treatment she was owed.</p>
+
+<p>The result is a character who functions as an antagonist in structure but reads as genuinely inspiring in practice. Her ambition is not destructive. Her confidence is not hollow. And her joy at being challenged — truly challenged — is one of the more quietly radical things a competitive character in this genre can do.</p>`
+      }
+    };
+
+    function openModal(key) {
+      const w = writings[key];
+      if (!w) return;
+      document.getElementById('modal-tag').textContent = w.tag;
+      document.getElementById('modal-title').textContent = w.title;
+      document.getElementById('modal-source').textContent = w.source;
+      document.getElementById('modal-quote').textContent = w.quote;
+      document.getElementById('modal-body').innerHTML = w.body;
+      const overlay = document.getElementById('writing-modal');
+      overlay.style.display = 'flex';
+      setTimeout(() => {
+        overlay.style.opacity = '1';
+        overlay.querySelector('.modal-panel').style.transform = 'translateX(0)';
+      }, 10);
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      const overlay = document.getElementById('writing-modal');
+      overlay.style.opacity = '0';
+      overlay.querySelector('.modal-panel').style.transform = 'translateX(40px)';
+      setTimeout(() => {
+        overlay.style.display = 'none';
+        document.body.style.overflow = '';
+      }, 300);
+    }
+
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+    </script>
+
+    <!-- NOTION-STYLE MODAL -->
+    <div id="writing-modal" style="display:none;opacity:0;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,0.6);backdrop-filter:blur(4px);align-items:flex-start;justify-content:flex-end;transition:opacity 0.3s;">
+      <div class="modal-panel" style="width:min(680px,90vw);height:100vh;background:#191919;overflow-y:auto;transform:translateX(40px);transition:transform 0.3s ease;box-shadow:-20px 0 60px rgba(0,0,0,0.5);display:flex;flex-direction:column;">
+
+        <!-- Modal top bar -->
+        <div style="padding:1.25rem 2rem;border-bottom:1px solid rgba(200,0,30,0.15);display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:#191919;z-index:2;">
+          <div style="display:flex;align-items:center;gap:10px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:var(--red);"></div>
+            <span style="font-family:var(--mono);font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:rgba(200,0,30,0.7);">Selected Writing</span>
+          </div>
+          <button onclick="closeModal()" style="background:none;border:none;cursor:pointer;color:rgba(242,237,228,0.4);font-size:20px;line-height:1;padding:4px 8px;border-radius:4px;transition:color 0.2s;" onmouseover="this.style.color='var(--cream)'" onmouseout="this.style.color='rgba(242,237,228,0.4)'">✕</button>
+        </div>
+
+        <!-- Modal content -->
+        <div style="padding:3rem 2.5rem;flex:1;">
+          <div id="modal-tag" style="font-family:var(--mono);font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--red);margin-bottom:1rem;"></div>
+          <h2 id="modal-title" style="font-family:var(--cond);font-size:clamp(36px,5vw,56px);font-weight:900;text-transform:uppercase;color:var(--cream);line-height:0.95;margin-bottom:0.5rem;"></h2>
+          <div id="modal-source" style="font-size:13px;font-weight:300;color:rgba(242,237,228,0.45);margin-bottom:2.5rem;"></div>
+
+          <!-- Pull quote -->
+          <div style="border-left:3px solid var(--red);padding:1rem 1.5rem;margin-bottom:2.5rem;background:rgba(200,0,30,0.05);border-radius:0 8px 8px 0;">
+            <p id="modal-quote" style="font-family:var(--serif);font-style:italic;font-size:15px;color:rgba(242,237,228,0.8);line-height:1.75;"></p>
+          </div>
+
+          <!-- Body text -->
+          <div id="modal-body" style="font-size:14px;font-weight:300;color:rgba(242,237,228,0.8);line-height:1.9;display:flex;flex-direction:column;gap:1.25rem;"></div>
+        </div>
+
+        <!-- Footer -->
+        <div style="padding:1.5rem 2.5rem;border-top:1px solid rgba(200,0,30,0.1);">
+          <button onclick="closeModal()" style="font-family:var(--mono);font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:rgba(242,237,228,0.4);background:none;border:1px solid rgba(242,237,228,0.15);border-radius:4px;padding:8px 16px;cursor:pointer;transition:all 0.2s;" onmouseover="this.style.color='var(--cream)';this.style.borderColor='rgba(242,237,228,0.4)'" onmouseout="this.style.color='rgba(242,237,228,0.4)';this.style.borderColor='rgba(242,237,228,0.15)'">← Close</button>
+        </div>
+      </div>
+    </div>
+
+
+
   </div>
-  <div style="position:absolute;bottom:3rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;">
-    <span style="font-family:var(--mono);font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted2);">Scroll</span>
-    <div style="width:1px;height:40px;background:linear-gradient(to bottom,transparent,var(--red));"></div>
-  </div>
-</div>
+</section>
+
+
 
 <!-- CLOSING -->
 <section id="closing" class="section">
