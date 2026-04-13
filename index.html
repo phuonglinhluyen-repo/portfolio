@@ -276,7 +276,7 @@ h2.display.on-light { color: var(--black); }
 .exp-main { padding: 2rem; }
 
 /* VISUAL ZONES */
-.vz-label { font-family: var(--sans); font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(200,0,30,0.6); margin-bottom: 0.75rem; margin-top: 1.5rem; }
+.vz-label { font-family: var(--sans); font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(200,0,30,0.9); margin-bottom: 0.75rem; margin-top: 1.5rem; }
 .vz-label:first-child { margin-top: 0; }
 .viz-grid { display: grid; gap: 3px; background: rgba(200,0,30,0.08); margin-bottom: 0.5rem; }
 .vg-2 { grid-template-columns: 1fr 1fr; }
@@ -298,7 +298,7 @@ h2.display.on-light { color: var(--black); }
 /* RESULTS */
 .results-bar {
   background: var(--red); display: grid; gap: 1px;
-  background-clip: padding-box; margin: 2.5rem 0;
+  background-clip: padding-box; margin: 2rem 0; border-radius: 8px; overflow: hidden;
 }
 .results-4 { grid-template-columns: repeat(4,1fr); }
 .results-3 { grid-template-columns: repeat(3,1fr); }
@@ -347,8 +347,9 @@ footer {
 footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em; color: var(--muted2); }
 
 /* ─── ANIMATIONS ─── */
-.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
-.reveal.visible { opacity: 1; transform: none; }
+.reveal { opacity: 1; transform: none; }
+.reveal.animate { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.animate.visible { opacity: 1; transform: none; }
 @keyframes fadeIn { to { opacity: 1; } }
 
 /* ─── UPCOMING ─── */
@@ -460,8 +461,8 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
           </div>
         </div>
         <div style="display:flex;flex-direction:column;gap:8px;margin-top:1rem;">
-          <a href="mailto:luyenphuonglinh1011@gmail.com" style="background:var(--red);border-radius:12px;padding:0.875rem 1.25rem;display:flex;justify-content:center;align-items:center;text-decoration:none;">
-            <span style="font-size:13px;font-weight:600;color:white;letter-spacing:0.05em;">luyenphuonglinh1011@gmail.com</span>
+          <a href="/cdn-cgi/l/email-protection#6c00191509021c041903020b000502045d5c5d5d2c0b010d0500420f0301" style="background:var(--red);border-radius:12px;padding:0.875rem 1.25rem;display:flex;justify-content:center;align-items:center;text-decoration:none;">
+            <span style="font-size:13px;font-weight:600;color:white;letter-spacing:0.05em;"><span class="__cf_email__" data-cfemail="bdd1c8c4d8d3cdd5c8d2d3dad1d4d3d58c8d8c8cfddad0dcd4d193ded2d0">[email&#160;protected]</span></span>
           </a>
         </div>
       </div>
@@ -792,7 +793,7 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
       </div>
       <div style="border-left:1px solid rgba(200,0,30,0.15); padding-left:2rem;">
         <div style="font-family:var(--serif); font-style:italic; font-size:14px; color:var(--red); margin-bottom:0.75rem;">timeline :</div>
-        <div style="font-size:13px; font-weight:300; color:var(--muted); line-height:1.7;">Dec 2023 – Present<br><span style="font-size:11px; color:rgba(200,0,30,0.5);">Ongoing</span></div>
+        <div style="font-size:13px; font-weight:300; color:var(--muted); line-height:1.7;">Dec 2023 – Present<br><span style="font-size:11px; color:rgba(200,0,30,0.85);">Ongoing</span></div>
       </div>
     </div>
 
@@ -1067,26 +1068,26 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
 
         <!-- ANNOTATIONS -->
         <div style="display:flex;flex-direction:column;gap:1rem;padding-top:0.5rem;">
-          <div style="font-family:var(--serif);font-style:italic;font-size:13px;color:var(--muted);margin-bottom:0.25rem;">Why this interaction matters:</div>
+          <div style="font-family:var(--serif);font-style:italic;font-size:14px;color:rgba(242,237,228,0.75);margin-bottom:0.5rem;">Why this interaction matters:</div>
           <div style="display:flex;gap:0.875rem;align-items:flex-start;">
-            <div style="flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-family:var(--cond);font-size:11px;font-weight:700;color:#fff;margin-top:2px;">1</div>
+            <div style="flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-family:var(--cond);font-size:12px;font-weight:700;color:#fff;margin-top:2px;">1</div>
             <div style="border-left:2px solid rgba(200,0,30,0.2);padding-left:0.875rem;">
-              <div style="font-family:var(--cond);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--cream);margin-bottom:3px;">Tone Match</div>
-              <div style="font-size:12px;font-weight:300;color:var(--muted);line-height:1.6;">The fan wrote casually and emotionally — I matched that energy exactly. "Dễ thương quá đíiiiii" isn't a brand voice, it's a person talking to another person.</div>
+              <div style="font-family:var(--cond);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--cream);margin-bottom:3px;">Tone Match</div>
+              <div style="font-size:14px;font-weight:300;color:rgba(242,237,228,0.85);line-height:1.7;">The fan wrote casually and emotionally — I matched that energy exactly. "Dễ thương quá đíiiiii" isn't a brand voice, it's a person talking to another person.</div>
             </div>
           </div>
           <div style="display:flex;gap:0.875rem;align-items:flex-start;">
-            <div style="flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-family:var(--cond);font-size:11px;font-weight:700;color:#fff;margin-top:2px;">2</div>
+            <div style="flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-family:var(--cond);font-size:12px;font-weight:700;color:#fff;margin-top:2px;">2</div>
             <div style="border-left:2px solid rgba(200,0,30,0.2);padding-left:0.875rem;">
-              <div style="font-family:var(--cond);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--cream);margin-bottom:3px;">Name Drop</div>
-              <div style="font-size:12px;font-weight:300;color:var(--muted);line-height:1.6;">Tagging back @Trần Ngọc Bích makes it personal — she sees a notification, feels seen, and is more likely to keep engaging.</div>
+              <div style="font-family:var(--cond);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--cream);margin-bottom:3px;">Name Drop</div>
+              <div style="font-size:14px;font-weight:300;color:rgba(242,237,228,0.85);line-height:1.7;">Tagging back @Trần Ngọc Bích makes it personal — she sees a notification, feels seen, and is more likely to keep engaging.</div>
             </div>
           </div>
           <div style="display:flex;gap:0.875rem;align-items:flex-start;">
-            <div style="flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-family:var(--cond);font-size:11px;font-weight:700;color:#fff;margin-top:2px;">3</div>
+            <div style="flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-family:var(--cond);font-size:12px;font-weight:700;color:#fff;margin-top:2px;">3</div>
             <div style="border-left:2px solid rgba(200,0,30,0.2);padding-left:0.875rem;">
-              <div style="font-family:var(--cond);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--cream);margin-bottom:3px;">Community Signal</div>
-              <div style="font-size:12px;font-weight:300;color:var(--muted);line-height:1.6;">"Ai cũng thích bún chả hết trơn" — the reply includes everyone reading, turning a 1:1 comment into a shared moment for the whole community.</div>
+              <div style="font-family:var(--cond);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--cream);margin-bottom:3px;">Community Signal</div>
+              <div style="font-size:14px;font-weight:300;color:rgba(242,237,228,0.85);line-height:1.7;">"Ai cũng thích bún chả hết trơn" — the reply includes everyone reading, turning a 1:1 comment into a shared moment for the whole community.</div>
             </div>
           </div>
         </div>
@@ -1095,12 +1096,14 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
   </div>
 </div>
 
+  <div style="padding:0 2rem;">
   <div class="results-bar results-4">
         <div class="result-cell"><div class="result-n">5.3<sup>K</sup></div><div class="result-lbl">Followers</div></div>
         <div class="result-cell"><div class="result-n">520<sup>K+</sup></div><div class="result-lbl">Total Reach</div></div>
         <div class="result-cell"><div class="result-n">100<sup>K+</sup></div><div class="result-lbl">Interactions</div></div>
         <div class="result-cell"><div class="result-n">0→</div><div class="result-lbl">Starting Audience</div></div>
       </div>
+  </div>
 
 <!-- ════════ PROJECT C: WHAT'S NEXT ════════ -->
 <div class="band">
@@ -1203,14 +1206,14 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
       </div>
       <div style="border-left:1px solid rgba(200,0,30,0.15);padding-left:2rem;">
         <div style="font-family:var(--serif);font-style:italic;font-size:14px;color:var(--red);margin-bottom:0.75rem;">timeline :</div>
-        <div style="font-size:13px;font-weight:300;color:var(--muted);line-height:1.7;">Sep – Dec 2023<br><span style="font-size:11px;color:rgba(200,0,30,0.5);">+ Advisor 2021–2022</span></div>
+        <div style="font-size:13px;font-weight:300;color:var(--muted);line-height:1.7;">Sep – Dec 2023<br><span style="font-size:11px;color:rgba(200,0,30,0.85);">+ Advisor 2021–2022</span></div>
       </div>
     </div>
   </div>
 
   <!-- ANNOTATED COPYWRITING SHOWCASE -->
   <div style="padding:2rem 3rem;">
-    <div style="font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:1.5rem;">Copywriting — Annotated</div>
+    <div style="font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.9);margin-bottom:1.5rem;">Copywriting — Annotated</div>
 
     <!-- ANNOTATED POST 01 -->
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-bottom:2rem;align-items:start;">
@@ -1239,44 +1242,44 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
 
       <!-- ANNOTATIONS PANEL -->
       <div style="display:flex;flex-direction:column;gap:1rem;padding-top:0.5rem;">
-        <div style="font-family:var(--serif);font-style:italic;font-size:13px;color:var(--muted);margin-bottom:0.5rem;">Writing decisions, explained:</div>
+        <div style="font-family:var(--serif);font-style:italic;font-size:14px;color:rgba(242,237,228,0.75);margin-bottom:0.75rem;">Writing decisions, explained:</div>
 
         <div style="display:flex;gap:0.875rem;align-items:flex-start;">
-          <div style="flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-family:var(--cond);font-size:11px;font-weight:700;color:#fff;margin-top:2px;">1</div>
+          <div style="flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-family:var(--cond);font-size:12px;font-weight:700;color:#fff;margin-top:2px;">1</div>
           <div style="border-left:2px solid rgba(200,0,30,0.2);padding-left:0.875rem;">
-            <div style="font-family:var(--cond);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--cream);margin-bottom:3px;">Opening Hook</div>
-            <div style="font-size:12px;font-weight:300;color:var(--muted);line-height:1.6;">[ Describe what you did with the first line — did you open with a question, a stat, an address to the reader? Why? ]</div>
+            <div style="font-family:var(--cond);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--cream);margin-bottom:3px;">Opening Hook</div>
+            <div style="font-size:14px;font-weight:300;color:rgba(242,237,228,0.8);line-height:1.7;">[ Describe what you did with the first line — did you open with a question, a stat, an address to the reader? Why? ]</div>
           </div>
         </div>
 
         <div style="display:flex;gap:0.875rem;align-items:flex-start;">
-          <div style="flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-family:var(--cond);font-size:11px;font-weight:700;color:#fff;margin-top:2px;">2</div>
+          <div style="flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-family:var(--cond);font-size:12px;font-weight:700;color:#fff;margin-top:2px;">2</div>
           <div style="border-left:2px solid rgba(200,0,30,0.2);padding-left:0.875rem;">
-            <div style="font-family:var(--cond);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--cream);margin-bottom:3px;">Tone & Voice</div>
-            <div style="font-size:12px;font-weight:300;color:var(--muted);line-height:1.6;">[ What tone did you choose — formal, urgent, inspiring? How did you balance HMUN's institutional voice with something people would actually want to read? ]</div>
+            <div style="font-family:var(--cond);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--cream);margin-bottom:3px;">Tone & Voice</div>
+            <div style="font-size:14px;font-weight:300;color:rgba(242,237,228,0.85);line-height:1.7;">[ What tone did you choose — formal, urgent, inspiring? How did you balance HMUN's institutional voice with something people would actually want to read? ]</div>
           </div>
         </div>
 
         <div style="display:flex;gap:0.875rem;align-items:flex-start;">
-          <div style="flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-family:var(--cond);font-size:11px;font-weight:700;color:#fff;margin-top:2px;">3</div>
+          <div style="flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-family:var(--cond);font-size:12px;font-weight:700;color:#fff;margin-top:2px;">3</div>
           <div style="border-left:2px solid rgba(200,0,30,0.2);padding-left:0.875rem;">
-            <div style="font-family:var(--cond);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--cream);margin-bottom:3px;">Call to Action</div>
-            <div style="font-size:12px;font-weight:300;color:var(--muted);line-height:1.6;">[ How did you close — what action did you want the reader to take, and how did you write it so it didn't feel like a generic "register now"? ]</div>
+            <div style="font-family:var(--cond);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--cream);margin-bottom:3px;">Call to Action</div>
+            <div style="font-size:14px;font-weight:300;color:rgba(242,237,228,0.85);line-height:1.7;">[ How did you close — what action did you want the reader to take, and how did you write it so it didn't feel like a generic "register now"? ]</div>
           </div>
         </div>
 
         <div style="display:flex;gap:0.875rem;align-items:flex-start;">
-          <div style="flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-family:var(--cond);font-size:11px;font-weight:700;color:#fff;margin-top:2px;">4</div>
+          <div style="flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-family:var(--cond);font-size:12px;font-weight:700;color:#fff;margin-top:2px;">4</div>
           <div style="border-left:2px solid rgba(200,0,30,0.2);padding-left:0.875rem;">
-            <div style="font-family:var(--cond);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--cream);margin-bottom:3px;">Result</div>
-            <div style="font-size:12px;font-weight:300;color:var(--muted);line-height:1.6;">[ What happened — engagement numbers, link clicks, delegate registrations, anything measurable or observable. ]</div>
+            <div style="font-family:var(--cond);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--cream);margin-bottom:3px;">Result</div>
+            <div style="font-size:14px;font-weight:300;color:rgba(242,237,228,0.85);line-height:1.7;">[ What happened — engagement numbers, link clicks, delegate registrations, anything measurable or observable. ]</div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- INSTAGRAM CAROUSEL -->
-    <div style="font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:1rem;margin-top:0.5rem;">More Posts</div>
+    <div style="font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.9);margin-bottom:1rem;margin-top:0.5rem;">More Posts</div>
 
     <div style="position:relative;margin:0 -3rem;padding:0 3rem;">
       <div id="hmun-carousel" style="display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:0 0 1rem;scrollbar-width:none;-ms-overflow-style:none;align-items:flex-start;">
@@ -1540,7 +1543,7 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
   </div>
 
   <div style="padding:2rem 3rem;">
-    <div style="font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:1.25rem;">Campaign Posts</div>
+    <div style="font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.9);margin-bottom:1.25rem;">Campaign Posts</div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:2rem;">
       <div style="background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.1);">
         <div style="padding:10px 12px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #f0f2f5;">
@@ -1587,7 +1590,7 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
     </div>
 
     <!-- NATIONAL MEDIA COVERAGE -->
-    <div style="font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:1rem;margin-top:2rem;">National Media Coverage</div>
+    <div style="font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.9);margin-bottom:1rem;margin-top:2rem;">National Media Coverage</div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-bottom:2rem;">
 
       <!-- VTV VIDEO CARD -->
@@ -1716,8 +1719,8 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
   <div style="position:absolute;font-family:var(--cond);font-weight:900;font-size:32vw;color:transparent;-webkit-text-stroke:1px rgba(200,0,30,0.04);user-select:none;line-height:1;">SEL</div>
   <div style="position:relative;z-index:1;text-align:center;" class="reveal">
     <div style="font-family:var(--mono);font-size:11px;letter-spacing:0.25em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:1rem;"></div>
-    <div style="font-family:var(--cond);font-weight:900;font-size:clamp(52px,9vw,110px);text-transform:uppercase;line-height:0.88;letter-spacing:-0.02em;color:var(--cream);">SELECTED<span style="color:var(--red);">WRITING</span></div>
-    <p style="font-family:var(--serif);font-style:italic;font-size:18px;color:var(--muted);margin-top:2rem;">Other writing works</p>
+    <div style="font-family:var(--cond);font-weight:900;font-size:clamp(52px,9vw,110px);text-transform:uppercase;line-height:0.88;letter-spacing:-0.02em;color:var(--cream);">ECTED<span style="color:var(--red);">WRITING</span></div>
+    <p style="font-family:var(--serif);font-style:italic;font-size:18px;color:var(--muted);margin-top:2rem;">HMUN · We Are 222 · GUISE The Musical</p>
   </div>
   <div style="position:absolute;bottom:3rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;">
     <span style="font-family:var(--mono);font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted2);">Scroll</span>
@@ -1735,7 +1738,7 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
         <p class="body-text" style="color:var(--muted);">I'm applying for the RED Summer Internship at CD PROJEKT RED — Community and Social Media Intern, July–September 2025, Warsaw. If you'd like to know more about any of the work shown here, I'd love to talk.</p>
       </div>
       <div class="closing-right">
-        <div class="c-item"><div class="c-label">Email</div><div class="c-val"><a href="mailto:luyenphuonglinh1011@gmail.com">luyenphuonglinh1011@gmail.com</a></div></div>
+        <div class="c-item"><div class="c-label">Email</div><div class="c-val"><a href="/cdn-cgi/l/email-protection#325e474b575c425a475d5c555e5b5c5a0302030372555f535b5e1c515d5f"><span class="__cf_email__" data-cfemail="d1bda4a8b4bfa1b9a4bebfb6bdb8bfb9e0e1e0e091b6bcb0b8bdffb2bebc">[email&#160;protected]</span></a></div></div>
         <div class="c-item"><div class="c-label">LinkedIn</div><div class="c-val"><a href="https://linkedin.com/in/phuong-linh-luyen">linkedin.com/in/phuong-linh-luyen</a></div></div>
         <div class="c-item"><div class="c-label">Currently based</div><div class="c-val">Milan, Italy</div></div>
         <div class="c-item"><div class="c-label">Available</div><div class="c-val">July – September 2026</div></div>
@@ -1749,12 +1752,13 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
 </footer>
 
 <script>
-const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 60); });
+const navEl = document.getElementById('nav');
+window.addEventListener('scroll', () => { navEl.classList.toggle('scrolled', window.scrollY > 60); });
 const obs = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
 }, { threshold: 0.06 });
 document.querySelectorAll('.reveal').forEach(el => {
+  el.classList.add('animate');
   if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('visible');
   else obs.observe(el);
 });
