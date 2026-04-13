@@ -143,7 +143,7 @@ h2.display.on-light { color: var(--black); }
 .body-text { font-size: 14px; font-weight: 300; line-height: 1.75; }
 .body-text p + p { margin-top: 0.75rem; }
 
-/* ─── TWO-PANEL ─── */
+/* ─── TWO-PANEL (CDPR style) ─── */
 .two-panel { display: grid; grid-template-columns: 1fr 1fr; min-height: 70vh; }
 .panel {
   position: relative; overflow: hidden;
@@ -433,6 +433,12 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
 
 <!-- HERO -->
 <section id="hero">
+  <div class="hero-bg">
+    <div class="hero-bg-img">
+      <span>📷 Add a hero background image here</span>
+      <span style="font-size:10px; opacity:0.5;">(replace .hero-bg-img with your image)</span>
+    </div>
+  </div>
   <div class="hero-scroll-hint">
     <span>Scroll</span>
     <div class="scroll-arrow"></div>
@@ -464,12 +470,19 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
             <span style="font-size:10px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(200,0,30,0.7);">Based</span>
             <span style="font-size:13px;color:#555;">Milan, Italy</span>
           </div>
+          <div style="background:var(--cream2);border-radius:12px;padding:0.875rem 1.25rem;display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-size:10px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(200,0,30,0.7);">Available</span>
+            <span style="font-size:13px;color:#555;">July–Sep 2025 · Warsaw</span>
+          </div>
           <div style="background:var(--cream2);border-radius:12px;padding:0.875rem 1.25rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px;">
             <span style="font-size:10px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(200,0,30,0.7);">Languages</span>
-            <span style="font-size:13px;color:#555;">Vietnamese · English · Italian</span>
+            <span style="font-size:13px;color:#555;">Vietnamese · English · Japanese</span>
           </div>
           <a href="mailto:luyenphuonglinh1011@gmail.com" style="background:var(--red);border-radius:12px;padding:0.875rem 1.25rem;display:flex;justify-content:center;align-items:center;text-decoration:none;">
             <span style="font-size:13px;font-weight:600;color:white;letter-spacing:0.05em;">luyenphuonglinh1011@gmail.com</span>
+          </a>
+          <a href="https://linkedin.com/in/phuong-linh-luyen" style="background:var(--cream2);border-radius:12px;padding:0.875rem 1.25rem;display:flex;justify-content:center;align-items:center;text-decoration:none;border:1px solid rgba(200,0,30,0.2);">
+            <span style="font-size:13px;font-weight:500;color:var(--red);">LinkedIn ↗</span>
           </a>
         </div>
       </div>
@@ -497,8 +510,26 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
           <div style="background:var(--cream2);border-radius:16px;padding:1.25rem 1.5rem;">
             <div style="font-family:var(--mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--red);margin-bottom:0.5rem;">2021 — 2024</div>
             <div style="font-family:var(--cond);font-size:18px;font-weight:700;text-transform:uppercase;color:var(--black);margin-bottom:0.4rem;">Hanoi–Amsterdam</div>
-            <div style="font-size:12px;font-weight:300;color:#666;line-height:1.5;">High School for the Gifted · IELTS 8.5 · Excellence Scholarship</div>
+            <div style="font-size:12px;font-weight:300;color:#666;line-height:1.5;">High School for the Gifted · IELTS 8.0 · SAT 1330 · Excellence Scholarship</div>
           </div>
+        </div>
+
+        <div class="eyebrow red" style="margin-bottom:0.75rem; margin-top:1.5rem;">Languages</div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:1.5rem;">
+          <div style="background:var(--cream2);border-radius:20px;padding:5px 14px;font-size:12px;color:#444;"><strong style="color:var(--black);">Vietnamese</strong> — Native</div>
+          <div style="background:var(--cream2);border-radius:20px;padding:5px 14px;font-size:12px;color:#444;"><strong style="color:var(--black);">English</strong> — Fluent · C1</div>
+          <div style="background:var(--cream2);border-radius:20px;padding:5px 14px;font-size:12px;color:#444;"><strong style="color:var(--black);">Italian</strong> — B1</div>
+          <div style="background:var(--cream2);border-radius:20px;padding:5px 14px;font-size:12px;color:#444;"><strong style="color:var(--black);">Japanese</strong> — Basic</div>
+        </div>
+
+        <div class="eyebrow red" style="margin-bottom:0.75rem;">Interests</div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;">
+          <div style="background:var(--cream2);border-radius:20px;padding:5px 14px;font-size:12px;color:#444;">Story-rich video games</div>
+          <div style="background:var(--cream2);border-radius:20px;padding:5px 14px;font-size:12px;color:#444;">Open-world RPGs</div>
+          <div style="background:var(--cream2);border-radius:20px;padding:5px 14px;font-size:12px;color:#444;">Roguelike games</div>
+          <div style="background:var(--cream2);border-radius:20px;padding:5px 14px;font-size:12px;color:#444;">Fandom culture</div>
+          <div style="background:var(--cream2);border-radius:20px;padding:5px 14px;font-size:12px;color:#444;">Theatre & musicals</div>
+          <div style="background:var(--cream2);border-radius:20px;padding:5px 14px;font-size:12px;color:#444;">Creative writing</div>
         </div>
 
       </div>
@@ -560,6 +591,8 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
           <div class="cando-card" style="border-radius:12px;"><div class="cando-n">02</div><h3>Build Content Calendars</h3><p>I plan around events, schedules, and campaign phases — consistent presence across platforms.</p></div>
           <div class="cando-card" style="border-radius:12px;"><div class="cando-n">03</div><h3>Monitor & Manage Communities</h3><p>Comments, messages, sentiment — I keep spaces positive and active. Audience vs community: I know the difference.</p></div>
           <div class="cando-card" style="border-radius:12px;"><div class="cando-n">04</div><h3>Analyze & Iterate</h3><p>Meta Business Suite analytics to assess what works — then iterate. Data informs; it doesn't replace judgment.</p></div>
+          <div class="cando-card" style="border-radius:12px;"><div class="cando-n">05</div><h3>Coordinate Outreach</h3><p>From national press coverage to student partnerships — I build relationships outside the community too.</p></div>
+          <div class="cando-card" style="border-radius:12px;"><div class="cando-n">06</div><h3>Brainstorm & Propose Ideas</h3><p>I pitch formats, plan giveaways, propose series. I come with ideas and listen when others have better ones.</p></div>
         </div>
       </div>
 
@@ -587,7 +620,7 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
   <div class="inner reveal">
     <div class="eyebrow red" style="margin-bottom:0.6rem;">Origin Story · 2020</div>
     <h2 class="display" style="margin-bottom:0.75rem;">Animal<br><span style="color:var(--red);">Kindergarten</span></h2>
-    <p style="font-size:14px;font-weight:300;color:var(--muted);line-height:1.7;max-width:560px;margin-bottom:2rem;">A public roleplay Discord server I built and ran at 13. 25 roles, 110 channels, custom bots, community events, and a 16-rule community document. This is where it all started.</p>
+    <p style="font-size:14px;font-weight:300;color:var(--muted);line-height:1.7;max-width:560px;margin-bottom:2rem;">A public roleplay Discord server I built and ran at 13 — 25 roles, 110 channels, 200+ members at peak, custom bot, original event lore, and a 16-rule community document. This is where it all started.</p>
 
     <div style="display:grid;grid-template-columns:1.2fr 1fr;gap:2rem;align-items:start;">
 
@@ -784,14 +817,74 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
   <!-- REST OF LOL CONTENT (posts, analytics etc) -->
   <div style="padding:0 0;"><div class="exp-main">
       <div class="vz-label">Posts & Copywriting</div>
-      <div class="viz-grid vg-3">
-        <div class="viz-cell"><div class="viz-icon">📱</div><span>Match reaction post</span></div>
-        <div class="viz-cell"><div class="viz-icon">📱</div><span>Milestone post</span></div>
-        <div class="viz-cell"><div class="viz-icon">📱</div><span>Meme / trend post</span></div>
-      </div>
-      <div class="viz-grid vg-2">
-        <div class="viz-cell"><div class="viz-icon">📱</div><span>Community event / giveaway</span></div>
-        <div class="viz-cell"><div class="viz-icon">📱</div><span>Origin story / long-form post</span></div>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:12px; padding:1.5rem 3rem;">
+
+        <!-- POST CARD 1 -->
+        <div style="background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.25);">
+          <div style="padding:10px 12px; display:flex; align-items:center; gap:8px; border-bottom:1px solid #f0f2f5;">
+            <div style="width:32px; height:32px; border-radius:50%; background:#e4e6eb; flex-shrink:0; display:flex; align-items:center; justify-content:center; font-size:10px; color:#999;">SM</div>
+            <div>
+              <div style="font-size:12px; font-weight:700; color:#050505; line-height:1.2;">ShowMaker cũng ngầu lắm đó</div>
+              <div style="font-size:10px; color:#65676b;">[ date ] · 🌐</div>
+            </div>
+          </div>
+          <div style="padding:8px 12px; font-size:12px; color:#050505; line-height:1.5; min-height:40px; background:#fff;">[ Caption placeholder — match reaction post ]</div>
+          <div style="aspect-ratio:1; background:#e4e6eb; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:4px;">
+            <span style="font-size:20px; opacity:0.3;">🖼</span>
+            <span style="font-size:9px; color:#999; letter-spacing:0.08em; text-transform:uppercase;">Add post image</span>
+          </div>
+          <div style="padding:6px 12px; border-top:1px solid #f0f2f5; display:flex; justify-content:space-between; align-items:center;">
+            <div style="display:flex; align-items:center; gap:4px; font-size:11px; color:#65676b;">
+              <span>👍❤️😂</span> <span>[ reactions ]</span>
+            </div>
+            <div style="font-size:11px; color:#65676b;">[ comments ] · [ shares ]</div>
+          </div>
+        </div>
+
+        <!-- POST CARD 2 -->
+        <div style="background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.25);">
+          <div style="padding:10px 12px; display:flex; align-items:center; gap:8px; border-bottom:1px solid #f0f2f5;">
+            <div style="width:32px; height:32px; border-radius:50%; background:#e4e6eb; flex-shrink:0; display:flex; align-items:center; justify-content:center; font-size:10px; color:#999;">SM</div>
+            <div>
+              <div style="font-size:12px; font-weight:700; color:#050505; line-height:1.2;">ShowMaker cũng ngầu lắm đó</div>
+              <div style="font-size:10px; color:#65676b;">[ date ] · 🌐</div>
+            </div>
+          </div>
+          <div style="padding:8px 12px; font-size:12px; color:#050505; line-height:1.5; min-height:40px; background:#fff;">[ Caption placeholder — milestone post ]</div>
+          <div style="aspect-ratio:1; background:#e4e6eb; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:4px;">
+            <span style="font-size:20px; opacity:0.3;">🖼</span>
+            <span style="font-size:9px; color:#999; letter-spacing:0.08em; text-transform:uppercase;">Add post image</span>
+          </div>
+          <div style="padding:6px 12px; border-top:1px solid #f0f2f5; display:flex; justify-content:space-between; align-items:center;">
+            <div style="display:flex; align-items:center; gap:4px; font-size:11px; color:#65676b;">
+              <span>👍❤️😂</span> <span>[ reactions ]</span>
+            </div>
+            <div style="font-size:11px; color:#65676b;">[ comments ] · [ shares ]</div>
+          </div>
+        </div>
+
+        <!-- POST CARD 3 -->
+        <div style="background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.25);">
+          <div style="padding:10px 12px; display:flex; align-items:center; gap:8px; border-bottom:1px solid #f0f2f5;">
+            <div style="width:32px; height:32px; border-radius:50%; background:#e4e6eb; flex-shrink:0; display:flex; align-items:center; justify-content:center; font-size:10px; color:#999;">SM</div>
+            <div>
+              <div style="font-size:12px; font-weight:700; color:#050505; line-height:1.2;">ShowMaker cũng ngầu lắm đó</div>
+              <div style="font-size:10px; color:#65676b;">[ date ] · 🌐</div>
+            </div>
+          </div>
+          <div style="padding:8px 12px; font-size:12px; color:#050505; line-height:1.5; min-height:40px; background:#fff;">[ Caption placeholder — meme / trend post ]</div>
+          <div style="aspect-ratio:1; background:#e4e6eb; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:4px;">
+            <span style="font-size:20px; opacity:0.3;">🖼</span>
+            <span style="font-size:9px; color:#999; letter-spacing:0.08em; text-transform:uppercase;">Add post image</span>
+          </div>
+          <div style="padding:6px 12px; border-top:1px solid #f0f2f5; display:flex; justify-content:space-between; align-items:center;">
+            <div style="display:flex; align-items:center; gap:4px; font-size:11px; color:#65676b;">
+              <span>👍❤️😂</span> <span>[ reactions ]</span>
+            </div>
+            <div style="font-size:11px; color:#65676b;">[ comments ] · [ shares ]</div>
+          </div>
+        </div>
+
       </div>
       <div class="vz-label">Short-Form Content</div>
       <div class="viz-grid vg-3">
@@ -910,7 +1003,6 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
       </div>
     </div>
   </div>
-</div></div>
 </div>
 
 
@@ -918,7 +1010,7 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
 <div class="band">
   <span class="band-t">Project C</span><span class="band-sep">·</span>
   <span class="band-t">What's Next</span><span class="band-sep">·</span>
-  <span class="band-t">Public Game Jam · Aug 2026</span>
+  <span class="band-t">August 2026</span>
 </div>
 
 <section class="section section-dark">
@@ -929,12 +1021,11 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
           <div style="width:8px;height:8px;border-radius:50%;background:var(--red);animation:pulse 2s ease-in-out infinite;flex-shrink:0;"></div>
           <span style="font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--red);">In Planning · Aug 2026</span>
         </div>
-        <h3 style="font-family:var(--cond);font-size:clamp(36px,5vw,64px);font-weight:900;text-transform:uppercase;line-height:0.95;color:var(--cream);margin-bottom:1.25rem;">Public Game Jam<br><span style="color:var(--red);">Vietnam 2026</span></h3>
-        <p style="font-size:15px;font-weight:300;color:var(--muted);line-height:1.85;margin-bottom:2rem;">Organising one of the first public game jams in Vietnam — open to indie developers, students, and hobbyists. Working with a small team to design the format, build the community around it, and make it happen.</p>
+        <h3 style="font-family:var(--cond);font-size:clamp(36px,5vw,64px);font-weight:900;text-transform:uppercase;line-height:0.95;color:var(--cream);margin-bottom:1.25rem;">What's<br><span style="color:var(--red);">Next</span></h3>
+        <p style="font-size:15px;font-weight:300;color:var(--muted);line-height:1.85;margin-bottom:2rem;">Something in the works — a community-driven event project planned for August 2026. More details soon.</p>
         <div style="display:flex;gap:1.5rem;flex-wrap:wrap;">
-          <div><div style="font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:0.3rem;">Role</div><div style="font-size:13px;color:var(--muted);">Co-organiser & Community Lead</div></div>
-          <div><div style="font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:0.3rem;">Status</div><div style="font-size:13px;color:var(--muted);">Planning phase</div></div>
-          <div><div style="font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:0.3rem;">Target</div><div style="font-size:13px;color:var(--muted);">August 2026</div></div>
+          <div><div style="font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:0.3rem;">Status</div><div style="font-size:13px;color:var(--muted);">In planning</div></div>
+          <div><div style="font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:0.3rem;">When</div><div style="font-size:13px;color:var(--muted);">August 2026</div></div>
         </div>
       </div>
       <div style="background:var(--dark2);border-radius:16px;overflow:hidden;">
@@ -952,7 +1043,7 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
 <div id="experience" style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--dark);position:relative;overflow:hidden;">
   <div style="position:absolute;font-family:var(--cond);font-weight:900;font-size:32vw;color:transparent;-webkit-text-stroke:1px rgba(200,0,30,0.04);user-select:none;line-height:1;">EXP</div>
   <div style="position:relative;z-index:1;text-align:center;" class="reveal">
-    <div style="font-family:var(--mono);font-size:11px;letter-spacing:0.25em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:1rem;">04 — Professional Experience</div>
+    <div style="font-family:var(--mono);font-size:11px;letter-spacing:0.25em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:1rem;">04 — Experience</div>
     <div style="font-family:var(--cond);font-weight:900;font-size:clamp(52px,9vw,110px);text-transform:uppercase;line-height:0.88;letter-spacing:-0.02em;color:var(--cream);">EXPERI<span style="color:var(--red);">ENCE</span></div>
     <p style="font-family:var(--serif);font-style:italic;font-size:18px;color:var(--muted);margin-top:2rem;">HMUN · We Are 222 · GUISE The Musical</p>
   </div>
@@ -969,99 +1060,303 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
   <span class="band-t">Sep–Dec 2023</span>
 </div>
 
-<div id="exp-hmun" class="section section-mid">
-  <div class="exp-hero reveal">
-    <div class="exp-hero-bg"></div>
-    <div class="exp-hero-img"><span>📷 Add HMUN project cover image</span></div>
-    <div class="exp-hero-content">
-      <div class="exp-hero-num">Project 02 · Sep–Dec 2023</div>
-      <h2 class="exp-hero-title">HMUN<br><span class="red">PR & Comms</span></h2>
-      <p class="exp-hero-sub">Marketing & PR Coordinator · Facebook & Instagram · Team of 10</p>
+<div id="exp-hmun" class="section" style="background:var(--dark);">
+  <div class="reveal" style="position:relative;overflow:hidden;">
+
+    <!-- BANNER -->
+    <div style="width:100%;height:200px;background:#1a2535;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;position:relative;overflow:hidden;">
+      <span style="font-family:var(--cond);font-size:32px;font-weight:900;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.08);">HMUN ORG.</span>
+      <span style="font-family:var(--mono);font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:rgba(100,160,255,0.3);">Add cover photo → images/hmun-banner.jpg</span>
+      <div style="position:absolute;bottom:0;left:0;right:0;height:80px;background:linear-gradient(to bottom,transparent,var(--dark));"></div>
+    </div>
+
+    <!-- PAGE INFO ROW -->
+    <div style="background:var(--dark);padding:0 3rem 2rem;display:flex;align-items:flex-end;gap:1.5rem;margin-top:-40px;position:relative;z-index:1;">
+      <div style="width:90px;height:90px;border-radius:50%;background:#1a2535;border:3px solid var(--dark);flex-shrink:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;overflow:hidden;">
+        <span style="font-family:var(--cond);font-size:16px;font-weight:900;color:rgba(100,160,255,0.5);">HM</span>
+        <span style="font-family:var(--mono);font-size:7px;letter-spacing:0.08em;text-transform:uppercase;color:rgba(100,160,255,0.3);">avatar</span>
+      </div>
+      <div style="padding-bottom:0.5rem;flex:1;">
+        <div style="font-family:var(--cond);font-size:22px;font-weight:900;text-transform:uppercase;color:var(--cream);letter-spacing:0.01em;line-height:1;margin-bottom:0.4rem;">Hanoi Model United Nations Organization — HMUN Org.</div>
+        <div style="font-size:13px;font-weight:300;color:var(--muted);">34K followers · Youth organisation</div>
+      </div>
+      <div style="padding-bottom:0.5rem;">
+        <div style="background:var(--dark2);border-radius:8px;padding:0.5rem 1rem;text-align:right;">
+          <div style="font-family:var(--mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--red);margin-bottom:2px;">Role</div>
+          <div style="font-size:12px;font-weight:500;color:var(--cream);">Marketing & PR Coordinator</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="height:1px;background:rgba(200,0,30,0.15);margin:0 3rem;"></div>
+
+    <!-- FIELD | MY INPUT | TIMELINE -->
+    <div style="display:grid;grid-template-columns:1fr 2fr 1fr;gap:0;margin:0 3rem;padding:1.75rem 0;border-bottom:1px solid rgba(200,0,30,0.15);">
+      <div>
+        <div style="font-family:var(--serif);font-style:italic;font-size:14px;color:var(--red);margin-bottom:0.75rem;">field :</div>
+        <div style="font-size:13px;font-weight:300;color:var(--muted);line-height:1.7;">Youth Organisation<br>Model United Nations<br>Student Conference</div>
+      </div>
+      <div style="border-left:1px solid rgba(200,0,30,0.15);padding-left:2rem;">
+        <div style="font-family:var(--serif);font-style:italic;font-size:14px;color:var(--red);margin-bottom:0.75rem;">my input :</div>
+        <div style="font-size:13px;font-weight:300;color:var(--muted);line-height:1.9;">
+          <span style="color:var(--cream);font-weight:500;">| Content Calendar:</span> Multi-phase conference campaign<br>
+          <span style="color:var(--cream);font-weight:500;">| Copywriting:</span> Registration posts, promo copy, recaps<br>
+          <span style="color:var(--cream);font-weight:500;">| Analytics:</span> Post-performance & community sentiment<br>
+          <span style="color:var(--cream);font-weight:500;">| Outreach:</span> Student org partnerships
+        </div>
+      </div>
+      <div style="border-left:1px solid rgba(200,0,30,0.15);padding-left:2rem;">
+        <div style="font-family:var(--serif);font-style:italic;font-size:14px;color:var(--red);margin-bottom:0.75rem;">timeline :</div>
+        <div style="font-size:13px;font-weight:300;color:var(--muted);line-height:1.7;">Sep – Dec 2023<br><span style="font-size:11px;color:rgba(200,0,30,0.5);">+ Advisor 2021–2022</span></div>
+      </div>
     </div>
   </div>
-  <div class="exp-detail reveal">
-    <div class="exp-sidebar">
-      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Role</div><div class="exp-sidebar-val">Marketing & PR Coordinator (Under-Secretary General)</div></div>
-      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Team</div><div class="exp-sidebar-val">10-person PR department</div></div>
-      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Event</div><div class="exp-sidebar-val">HMUN Mock #18 — 2-day, 3-council conference</div></div>
-      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Platforms</div><div class="exp-sidebar-val">Facebook, Instagram</div></div>
-      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Also</div><div class="exp-sidebar-val">PR Member & Advisor across 3 annual HMUN conferences, 2021–2023</div></div>
+
+  <!-- ANNOTATED COPYWRITING SHOWCASE -->
+  <div style="padding:2rem 3rem;">
+    <div style="font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:1.5rem;">Copywriting — Annotated</div>
+
+    <!-- ANNOTATED POST 01 -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-bottom:2rem;align-items:start;">
+      <!-- POST CARD -->
+      <div style="background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,0.3);">
+        <div style="padding:10px 12px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #f0f2f5;">
+          <div style="width:32px;height:32px;border-radius:50%;background:#1a2535;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:#6495c8;">HM</div>
+          <div>
+            <div style="font-size:12px;font-weight:700;color:#050505;line-height:1.2;">Hanoi Model United Nations Organization</div>
+            <div style="font-size:10px;color:#65676b;">[ Add date ] · 🌐</div>
+          </div>
+        </div>
+        <div style="padding:10px 12px;background:#fff;">
+          <p style="font-size:12px;color:#050505;line-height:1.65;margin-bottom:6px;">[ Add registration/promo caption here — this is where your copy goes. The annotated panel on the right will point out the specific choices you made: the opening hook, the call to action, the tone. ]</p>
+          <p style="font-size:11px;color:#65676b;">... See more</p>
+        </div>
+        <div style="aspect-ratio:4/3;background:#e4e6eb;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;">
+          <span style="font-size:20px;opacity:0.3;">🖼</span>
+          <span style="font-size:9px;color:#999;letter-spacing:0.08em;text-transform:uppercase;">Add post image</span>
+        </div>
+        <div style="padding:6px 12px;border-top:1px solid #f0f2f5;display:flex;justify-content:space-between;font-size:11px;color:#65676b;">
+          <span>👍❤️ [ reactions ]</span>
+          <span>[ comments ] · [ shares ]</span>
+        </div>
+      </div>
+
+      <!-- ANNOTATIONS PANEL -->
+      <div style="display:flex;flex-direction:column;gap:1rem;padding-top:0.5rem;">
+        <div style="font-family:var(--serif);font-style:italic;font-size:13px;color:var(--muted);margin-bottom:0.5rem;">Writing decisions, explained:</div>
+
+        <div style="display:flex;gap:0.875rem;align-items:flex-start;">
+          <div style="flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-family:var(--cond);font-size:11px;font-weight:700;color:#fff;margin-top:2px;">1</div>
+          <div style="border-left:2px solid rgba(200,0,30,0.2);padding-left:0.875rem;">
+            <div style="font-family:var(--cond);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--cream);margin-bottom:3px;">Opening Hook</div>
+            <div style="font-size:12px;font-weight:300;color:var(--muted);line-height:1.6;">[ Describe what you did with the first line — did you open with a question, a stat, an address to the reader? Why? ]</div>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:0.875rem;align-items:flex-start;">
+          <div style="flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-family:var(--cond);font-size:11px;font-weight:700;color:#fff;margin-top:2px;">2</div>
+          <div style="border-left:2px solid rgba(200,0,30,0.2);padding-left:0.875rem;">
+            <div style="font-family:var(--cond);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--cream);margin-bottom:3px;">Tone & Voice</div>
+            <div style="font-size:12px;font-weight:300;color:var(--muted);line-height:1.6;">[ What tone did you choose — formal, urgent, inspiring? How did you balance HMUN's institutional voice with something people would actually want to read? ]</div>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:0.875rem;align-items:flex-start;">
+          <div style="flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-family:var(--cond);font-size:11px;font-weight:700;color:#fff;margin-top:2px;">3</div>
+          <div style="border-left:2px solid rgba(200,0,30,0.2);padding-left:0.875rem;">
+            <div style="font-family:var(--cond);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--cream);margin-bottom:3px;">Call to Action</div>
+            <div style="font-size:12px;font-weight:300;color:var(--muted);line-height:1.6;">[ How did you close — what action did you want the reader to take, and how did you write it so it didn't feel like a generic "register now"? ]</div>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:0.875rem;align-items:flex-start;">
+          <div style="flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-family:var(--cond);font-size:11px;font-weight:700;color:#fff;margin-top:2px;">4</div>
+          <div style="border-left:2px solid rgba(200,0,30,0.2);padding-left:0.875rem;">
+            <div style="font-family:var(--cond);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--cream);margin-bottom:3px;">Result</div>
+            <div style="font-size:12px;font-weight:300;color:var(--muted);line-height:1.6;">[ What happened — engagement numbers, link clicks, delegate registrations, anything measurable or observable. ]</div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="exp-main">
-      <div class="vz-label">Campaign Posts & Comms</div>
-      <div class="viz-grid vg-3">
-        <div class="viz-cell"><div class="viz-icon">📱</div><span>Registration campaign post</span></div>
-        <div class="viz-cell"><div class="viz-icon">📱</div><span>Conference promo post</span></div>
-        <div class="viz-cell"><div class="viz-icon">📱</div><span>Post-event recap</span></div>
+
+    <!-- ADDITIONAL POSTS GRID -->
+    <div style="font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:1rem;margin-top:0.5rem;">More Posts</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:2rem;">
+      <div style="background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.25);">
+        <div style="padding:10px 12px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #f0f2f5;">
+          <div style="width:28px;height:28px;border-radius:50%;background:#1a2535;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:#6495c8;">HM</div>
+          <div><div style="font-size:11px;font-weight:700;color:#050505;">HMUN Org.</div><div style="font-size:10px;color:#65676b;">[ date ]</div></div>
+        </div>
+        <div style="padding:8px 12px;font-size:11px;color:#050505;line-height:1.5;min-height:36px;background:#fff;">[ Conference promo caption ]</div>
+        <div style="aspect-ratio:1;background:#e4e6eb;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;">
+          <span style="font-size:18px;opacity:0.3;">🖼</span>
+          <span style="font-size:9px;color:#999;text-transform:uppercase;letter-spacing:0.06em;">Add image</span>
+        </div>
+        <div style="padding:6px 12px;border-top:1px solid #f0f2f5;display:flex;justify-content:space-between;font-size:10px;color:#65676b;">
+          <span>👍 [ reactions ]</span><span>[ comments ]</span>
+        </div>
       </div>
-      <div class="viz-grid vg-2">
-        <div class="viz-cell"><div class="viz-icon">🎬</div><span>Conference promo video / reel</span></div>
-        <div class="viz-cell"><div class="viz-icon">📊</div><span>Campaign analytics screenshot</span></div>
+      <div style="background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.25);">
+        <div style="padding:10px 12px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #f0f2f5;">
+          <div style="width:28px;height:28px;border-radius:50%;background:#1a2535;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:#6495c8;">HM</div>
+          <div><div style="font-size:11px;font-weight:700;color:#050505;">HMUN Org.</div><div style="font-size:10px;color:#65676b;">[ date ]</div></div>
+        </div>
+        <div style="padding:8px 12px;font-size:11px;color:#050505;line-height:1.5;min-height:36px;background:#fff;">[ Registration deadline caption ]</div>
+        <div style="aspect-ratio:1;background:#e4e6eb;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;">
+          <span style="font-size:18px;opacity:0.3;">🖼</span>
+          <span style="font-size:9px;color:#999;text-transform:uppercase;letter-spacing:0.06em;">Add image</span>
+        </div>
+        <div style="padding:6px 12px;border-top:1px solid #f0f2f5;display:flex;justify-content:space-between;font-size:10px;color:#65676b;">
+          <span>👍 [ reactions ]</span><span>[ comments ]</span>
+        </div>
       </div>
-      <div class="results-bar results-3">
-        <div class="result-cell"><div class="result-n">67<sup>%</sup></div><div class="result-lbl">Increase in Attendance</div></div>
-        <div class="result-cell"><div class="result-n">50<sup>+</sup></div><div class="result-lbl">Conference Participants</div></div>
-        <div class="result-cell"><div class="result-n">3</div><div class="result-lbl">Annual Conferences (2021–2023)</div></div>
+      <div style="background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.25);">
+        <div style="padding:10px 12px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #f0f2f5;">
+          <div style="width:28px;height:28px;border-radius:50%;background:#1a2535;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:#6495c8;">HM</div>
+          <div><div style="font-size:11px;font-weight:700;color:#050505;">HMUN Org.</div><div style="font-size:10px;color:#65676b;">[ date ]</div></div>
+        </div>
+        <div style="padding:8px 12px;font-size:11px;color:#050505;line-height:1.5;min-height:36px;background:#fff;">[ Post-event recap caption ]</div>
+        <div style="aspect-ratio:1;background:#e4e6eb;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;">
+          <span style="font-size:18px;opacity:0.3;">🖼</span>
+          <span style="font-size:9px;color:#999;text-transform:uppercase;letter-spacing:0.06em;">Add image</span>
+        </div>
+        <div style="padding:6px 12px;border-top:1px solid #f0f2f5;display:flex;justify-content:space-between;font-size:10px;color:#65676b;">
+          <span>👍 [ reactions ]</span><span>[ comments ]</span>
+        </div>
       </div>
-      <div class="vz-label">What I Learned</div>
-      <div class="learned-row learned-2">
-        <div class="learned-card"><h4>Brand consistency across a team is harder than solo work.</h4><p>Managing 10 people all writing content meant constantly re-aligning on voice and tone. I learned to create briefs and feedback loops rather than doing everything myself.</p></div>
-        <div class="learned-card"><h4>Outreach is community management before the community exists.</h4><p>Getting partners involved early meant the audience was already primed when registration opened. Building relationships before you need them is the actual skill.</p></div>
-      </div>
+    </div>
+
+    <div class="results-bar results-3">
+      <div class="result-cell"><div class="result-n">67<sup>%</sup></div><div class="result-lbl">Increase in Attendance</div></div>
+      <div class="result-cell"><div class="result-n">50<sup>+</sup></div><div class="result-lbl">Conference Participants</div></div>
+      <div class="result-cell"><div class="result-n">3</div><div class="result-lbl">Annual Conferences 2021–2023</div></div>
+    </div>
+    <div class="vz-label">What I Learned</div>
+    <div class="learned-row learned-2">
+      <div class="learned-card"><h4>Brand consistency across a team is harder than solo work.</h4><p>Managing 10 people all writing content meant constantly re-aligning on voice and tone. I learned to create briefs and feedback loops rather than doing everything myself.</p></div>
+      <div class="learned-card"><h4>Outreach is community management before the community exists.</h4><p>Getting partners involved early meant the audience was already primed when registration opened. Building relationships before you need them is the actual skill.</p></div>
     </div>
   </div>
 </div>
-
 <!-- ════════ EXP 03 — WE ARE 222 ════════ -->
 <div class="band">
-  <span class="band-t">Project 03</span><span class="band-sep">·</span>
+  <span class="band-t">Experience 02</span><span class="band-sep">·</span>
   <span class="band-t">We Are 222</span><span class="band-sep">·</span>
   <span class="band-t">NGO Campaigns</span><span class="band-sep">·</span>
   <span class="band-t">Jan–Dec 2023</span>
 </div>
 
-<div id="exp-222" class="section section-light">
-  <div class="exp-hero reveal" style="background: var(--cream2);">
-    <div class="exp-hero-bg" style="background: linear-gradient(to top, rgba(242,237,228,0.98) 0%, rgba(242,237,228,0.6) 50%, rgba(242,237,228,0.2) 100%);"></div>
-    <div class="exp-hero-img" style="background: var(--cream2);"><span style="color:rgba(200,0,30,0.3);">📷 Add We Are 222 cover image</span></div>
-    <div class="exp-hero-content">
-      <div class="exp-hero-num" style="color:var(--red);">Project 03 · Jan–Dec 2023</div>
-      <h2 class="exp-hero-title" style="color:var(--black);">We Are<br><span class="red">222</span></h2>
-      <p class="exp-hero-sub" style="color:#666;">Communications & Outreach Lead · Marketing Lead · NGO</p>
+<div id="exp-222" class="section" style="background:var(--cream);">
+  <div class="reveal" style="position:relative;overflow:hidden;">
+
+    <!-- BANNER -->
+    <div style="width:100%;height:200px;background:var(--cream2);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;position:relative;overflow:hidden;">
+      <span style="font-family:var(--cond);font-size:32px;font-weight:900;letter-spacing:0.08em;text-transform:uppercase;color:rgba(0,0,0,0.06);">WE ARE 222</span>
+      <span style="font-family:var(--mono);font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:rgba(200,0,30,0.25);">Add cover photo → images/222-banner.jpg</span>
+      <div style="position:absolute;bottom:0;left:0;right:0;height:80px;background:linear-gradient(to bottom,transparent,var(--cream));"></div>
+    </div>
+
+    <!-- PAGE INFO ROW -->
+    <div style="background:var(--cream);padding:0 3rem 2rem;display:flex;align-items:flex-end;gap:1.5rem;margin-top:-40px;position:relative;z-index:1;">
+      <div style="width:90px;height:90px;border-radius:50%;background:var(--cream2);border:3px solid var(--cream);flex-shrink:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;overflow:hidden;">
+        <span style="font-family:var(--cond);font-size:16px;font-weight:900;color:rgba(200,0,30,0.3);">222</span>
+        <span style="font-family:var(--mono);font-size:7px;letter-spacing:0.08em;text-transform:uppercase;color:rgba(200,0,30,0.25);">avatar</span>
+      </div>
+      <div style="padding-bottom:0.5rem;flex:1;">
+        <div style="font-family:var(--cond);font-size:22px;font-weight:900;text-transform:uppercase;color:var(--black);letter-spacing:0.01em;line-height:1;margin-bottom:0.4rem;">We Are 222 Education</div>
+        <div style="font-size:13px;font-weight:300;color:#666;">Student-run NGO · English education initiative</div>
+      </div>
+      <div style="padding-bottom:0.5rem;">
+        <div style="background:var(--cream2);border-radius:8px;padding:0.5rem 1rem;text-align:right;">
+          <div style="font-family:var(--mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--red);margin-bottom:2px;">Role</div>
+          <div style="font-size:12px;font-weight:500;color:var(--black);">Comms & Outreach Lead · Marketing Lead</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="height:1px;background:rgba(200,0,30,0.15);margin:0 3rem;"></div>
+
+    <!-- FIELD | MY INPUT | TIMELINE -->
+    <div style="display:grid;grid-template-columns:1fr 2fr 1fr;gap:0;margin:0 3rem;padding:1.75rem 0;border-bottom:1px solid rgba(200,0,30,0.15);">
+      <div>
+        <div style="font-family:var(--serif);font-style:italic;font-size:14px;color:var(--red);margin-bottom:0.75rem;">field :</div>
+        <div style="font-size:13px;font-weight:300;color:#555;line-height:1.7;">Education · NGO<br>Social Impact<br>Rural Vietnam</div>
+      </div>
+      <div style="border-left:1px solid rgba(200,0,30,0.15);padding-left:2rem;">
+        <div style="font-family:var(--serif);font-style:italic;font-size:14px;color:var(--red);margin-bottom:0.75rem;">my input :</div>
+        <div style="font-size:13px;font-weight:300;color:#555;line-height:1.9;">
+          <span style="color:var(--black);font-weight:500;">| Copywriting:</span> Campaign posts, cause-driven content<br>
+          <span style="color:var(--black);font-weight:500;">| Social Media:</span> Facebook, Instagram channel management<br>
+          <span style="color:var(--black);font-weight:500;">| Analytics:</span> Campaign performance & audience response<br>
+          <span style="color:var(--black);font-weight:500;">| Outreach:</span> 20+ media outlets, VTV & VNA
+        </div>
+      </div>
+      <div style="border-left:1px solid rgba(200,0,30,0.15);padding-left:2rem;">
+        <div style="font-family:var(--serif);font-style:italic;font-size:14px;color:var(--red);margin-bottom:0.75rem;">timeline :</div>
+        <div style="font-size:13px;font-weight:300;color:#555;line-height:1.7;">Jan – Dec 2023<br><span style="font-size:11px;color:rgba(200,0,30,0.5);">2 campaigns</span></div>
+      </div>
     </div>
   </div>
-  <div class="exp-detail reveal">
-    <div class="exp-sidebar" style="background:var(--cream2); border-right-color: rgba(0,0,0,0.08);">
-      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Roles</div><div class="exp-sidebar-val" style="color:#555;">Marketing Lead → Communications & Outreach Lead</div></div>
-      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Campaigns</div><div class="exp-sidebar-val" style="color:#555;">Chronicle of Love 2022 (book donation) · Sow a Seed 2023 (English education)</div></div>
-      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Platforms</div><div class="exp-sidebar-val" style="color:#555;">Facebook, Instagram</div></div>
-      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Location</div><div class="exp-sidebar-val" style="color:#555;">Hòa Bình Province, remote Vietnam</div></div>
+
+  <div style="padding:2rem 3rem;">
+    <div style="font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,0,30,0.6);margin-bottom:1.25rem;">Campaign Posts</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:2rem;">
+      <div style="background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.1);">
+        <div style="padding:10px 12px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #f0f2f5;">
+          <div style="width:28px;height:28px;border-radius:50%;background:var(--cream2);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:var(--red);">222</div>
+          <div><div style="font-size:11px;font-weight:700;color:#050505;">We Are 222</div><div style="font-size:10px;color:#65676b;">[ date ]</div></div>
+        </div>
+        <div style="padding:8px 12px;font-size:11px;color:#050505;line-height:1.5;min-height:36px;">[ Book donation campaign post ]</div>
+        <div style="aspect-ratio:1;background:#e4e6eb;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;">
+          <span style="font-size:18px;opacity:0.3;">🖼</span>
+          <span style="font-size:9px;color:#999;text-transform:uppercase;letter-spacing:0.06em;">Add image</span>
+        </div>
+        <div style="padding:6px 12px;border-top:1px solid #f0f2f5;display:flex;justify-content:space-between;font-size:10px;color:#65676b;">
+          <span>👍 [ reactions ]</span><span>[ comments ]</span>
+        </div>
+      </div>
+      <div style="background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.1);">
+        <div style="padding:10px 12px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #f0f2f5;">
+          <div style="width:28px;height:28px;border-radius:50%;background:var(--cream2);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:var(--red);">222</div>
+          <div><div style="font-size:11px;font-weight:700;color:#050505;">We Are 222</div><div style="font-size:10px;color:#65676b;">[ date ]</div></div>
+        </div>
+        <div style="padding:8px 12px;font-size:11px;color:#050505;line-height:1.5;min-height:36px;">[ Sow a Seed 2023 campaign post ]</div>
+        <div style="aspect-ratio:1;background:#e4e6eb;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;">
+          <span style="font-size:18px;opacity:0.3;">🖼</span>
+          <span style="font-size:9px;color:#999;text-transform:uppercase;letter-spacing:0.06em;">Add image</span>
+        </div>
+        <div style="padding:6px 12px;border-top:1px solid #f0f2f5;display:flex;justify-content:space-between;font-size:10px;color:#65676b;">
+          <span>👍 [ reactions ]</span><span>[ comments ]</span>
+        </div>
+      </div>
+      <div style="background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.1);">
+        <div style="padding:10px 12px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #f0f2f5;">
+          <div style="width:28px;height:28px;border-radius:50%;background:var(--cream2);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:var(--red);">222</div>
+          <div><div style="font-size:11px;font-weight:700;color:#050505;">We Are 222</div><div style="font-size:10px;color:#65676b;">[ date ]</div></div>
+        </div>
+        <div style="padding:8px 12px;font-size:11px;color:#050505;line-height:1.5;min-height:36px;">[ VTV / media coverage announcement ]</div>
+        <div style="aspect-ratio:1;background:#e4e6eb;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;">
+          <span style="font-size:18px;opacity:0.3;">📺</span>
+          <span style="font-size:9px;color:#999;text-transform:uppercase;letter-spacing:0.06em;">Add image</span>
+        </div>
+        <div style="padding:6px 12px;border-top:1px solid #f0f2f5;display:flex;justify-content:space-between;font-size:10px;color:#65676b;">
+          <span>👍 [ reactions ]</span><span>[ comments ]</span>
+        </div>
+      </div>
     </div>
-    <div class="exp-main" style="background:var(--cream);">
-      <div class="vz-label" style="color:rgba(200,0,30,0.7);">Campaign Content</div>
-      <div class="viz-grid vg-3" style="background:rgba(0,0,0,0.05);">
-        <div class="viz-cell" style="background:var(--cream2); color:rgba(200,0,30,0.4); border-color:rgba(200,0,30,0.15);"><div class="viz-icon">📱</div><span>Book donation campaign post</span></div>
-        <div class="viz-cell" style="background:var(--cream2); color:rgba(200,0,30,0.4); border-color:rgba(200,0,30,0.15);"><div class="viz-icon">📱</div><span>Sow a Seed 2023 post</span></div>
-        <div class="viz-cell" style="background:var(--cream2); color:rgba(200,0,30,0.4); border-color:rgba(200,0,30,0.15);"><div class="viz-icon">📰</div><span>VTV / VNA media coverage</span></div>
-      </div>
-      <div class="viz-grid vg-2" style="background:rgba(0,0,0,0.05);">
-        <div class="viz-cell" style="background:var(--cream2); color:rgba(200,0,30,0.4); border-color:rgba(200,0,30,0.15);"><div class="viz-icon">🎬</div><span>Campaign recap video</span></div>
-        <div class="viz-cell" style="background:var(--cream2); color:rgba(200,0,30,0.4); border-color:rgba(200,0,30,0.15);"><div class="viz-icon">📸</div><span>Field photos from Hòa Bình</span></div>
-      </div>
-      <div class="results-bar results-3">
-        <div class="result-cell"><div class="result-n">20<sup>+</sup></div><div class="result-lbl">Media Partners</div></div>
-        <div class="result-cell"><div class="result-n">500<sup>+</sup></div><div class="result-lbl">Books Donated</div></div>
-        <div class="result-cell"><div class="result-n">2×</div><div class="result-lbl">National TV & Press</div></div>
-      </div>
-      <div class="vz-label" style="color:rgba(200,0,30,0.7);">What I Learned</div>
-      <div class="learned-row learned-2" style="background:rgba(0,0,0,0.05);">
-        <div class="learned-card" style="background:var(--cream2);"><h4 style="color:var(--black);">Purpose-driven content earns attention differently.</h4><p style="color:#666;">Writing for a cause means the audience has to believe you mean it. That discipline made me a better writer for everything else.</p></div>
-        <div class="learned-card" style="background:var(--cream2);"><h4 style="color:var(--black);">Media outreach is a numbers and relationships game.</h4><p style="color:#666;">Reaching 20+ outlets taught me that a few will respond — and VTV coverage changed the campaign's visibility overnight.</p></div>
-      </div>
+
+    <div class="results-bar results-3">
+      <div class="result-cell"><div class="result-n">20<sup>+</sup></div><div class="result-lbl">Media Partners</div></div>
+      <div class="result-cell"><div class="result-n">500<sup>+</sup></div><div class="result-lbl">Books Donated</div></div>
+      <div class="result-cell"><div class="result-n">2×</div><div class="result-lbl">National TV & Press</div></div>
+    </div>
+    <div class="vz-label">What I Learned</div>
+    <div class="learned-row learned-2" style="background:rgba(0,0,0,0.05);">
+      <div class="learned-card" style="background:var(--cream2);"><h4 style="color:var(--black);">Purpose-driven content earns attention differently.</h4><p style="color:#666;">Writing for a cause means the audience has to believe you mean it. That discipline made me a better writer for everything else.</p></div>
+      <div class="learned-card" style="background:var(--cream2);"><h4 style="color:var(--black);">Media outreach is a numbers and relationships game.</h4><p style="color:#666;">Reaching 20+ outlets taught me that a few will respond — and VTV coverage changed the campaign's visibility overnight.</p></div>
     </div>
   </div>
 </div>
-
 <!-- ════════ EXP 04 — GUISE ════════ -->
 <div class="band">
   <span class="band-t">Project 04</span><span class="band-sep">·</span>
@@ -1077,12 +1372,12 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
     <div class="exp-hero-content">
       <div class="exp-hero-num">Project 04 · Nov 2022–Sep 2023</div>
       <h2 class="exp-hero-title">GUISE<br><span class="red">The Musical</span></h2>
-      <p class="exp-hero-sub">Scriptwriter & Backstage Operations Coordinator · 700+ Live Audience</p>
+      <p class="exp-hero-sub">Scriptwriter · 700+ Live Audience</p>
     </div>
   </div>
   <div class="exp-detail reveal">
     <div class="exp-sidebar">
-      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Roles</div><div class="exp-sidebar-val">Scriptwriter & Head of Backstage Operations</div></div>
+      <div class="exp-sidebar-item"><div class="exp-sidebar-label">Role</div><div class="exp-sidebar-val">Scriptwriter</div></div>
       <div class="exp-sidebar-item"><div class="exp-sidebar-label">Team</div><div class="exp-sidebar-val">20-person backstage crew</div></div>
       <div class="exp-sidebar-item"><div class="exp-sidebar-label">Production</div><div class="exp-sidebar-val">Original English-language musical written, produced and performed entirely by students</div></div>
       <div class="exp-sidebar-item"><div class="exp-sidebar-label">Collaborators</div><div class="exp-sidebar-val">Director, composer, lyricist, 700+ live audience</div></div>
@@ -1119,20 +1414,21 @@ footer span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.12em;
       <div class="closing-left">
         <div class="eyebrow red" style="margin-bottom:1rem;">Let's Work Together</div>
         <h2 class="display">Ready<br>When<br><span class="red">You Are</span></h2>
-        <p class="body-text" style="color:var(--muted);">I'm applying for the RED Summer Internship at CD PROJEKT RED — Community and Social Media Intern, July–September 2026, Warsaw. If you'd like to know more about any of the work shown here, I'd love to talk.</p>
+        <p class="body-text" style="color:var(--muted);">I'm applying for the RED Summer Internship at CD PROJEKT RED — Community and Social Media Intern, July–September 2025, Warsaw. If you'd like to know more about any of the work shown here, I'd love to talk.</p>
       </div>
       <div class="closing-right">
         <div class="c-item"><div class="c-label">Email</div><div class="c-val"><a href="mailto:luyenphuonglinh1011@gmail.com">luyenphuonglinh1011@gmail.com</a></div></div>
         <div class="c-item"><div class="c-label">LinkedIn</div><div class="c-val"><a href="https://linkedin.com/in/phuong-linh-luyen">linkedin.com/in/phuong-linh-luyen</a></div></div>
         <div class="c-item"><div class="c-label">Currently based</div><div class="c-val">Milan, Italy</div></div>
-        <div class="c-item"><div class="c-label">Available</div><div class="c-val">July – September 2026</div></div>
+        <div class="c-item"><div class="c-label">Available</div><div class="c-val">July – September 2025 · Warsaw</div></div>
       </div>
     </div>
   </div>
 </section>
 
 <footer>
-  <span>PHUONG LINH LUYEN — COMMUNITY PORTFOLIO 2026</span>
+  <span>PHUONG LINH LUYEN — COMMUNITY PORTFOLIO 2024</span>
+  <span>CDPR APPLICATION ↗</span>
 </footer>
 
 <script>
